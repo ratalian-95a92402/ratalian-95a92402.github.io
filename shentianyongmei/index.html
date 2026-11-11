@@ -1,0 +1,1334 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深田咏美作品番号 - 番号索引与作品类型解析</title>
+<meta name="description" content="深田咏美作品番号按发行年份、厂牌与类型整理，收录单体作品、共演合集、VR 与出道期番号的辨别要点，适合查番号、比对版本与挑选入门的观众参考。">
+<meta name="keywords" content="深田咏美作品番号">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b1f3b'/%3E%3Cpath d='M16 44V20h10c7 0 11 4 11 10s-4 10-11 10h-4v4z' fill='%23f2b8c6'/%3E%3Ccircle cx='46' cy='24' r='6' fill='%23f6d365'/%3E%3C/svg%3E">
+<style>
+:root{
+  --brand:#1b1f3b;
+  --brand-2:#2c3263;
+  --accent:#c2456b;
+  --accent-soft:#f7dde5;
+  --gold:#c99a2e;
+  --bg:#f6f4f7;
+  --panel:#ffffff;
+  --panel-2:#f1eef4;
+  --text:#1c1b22;
+  --text-2:#4c4a58;
+  --text-3:#7c7a8a;
+  --line:#e3dfe8;
+  --radius-card:14px;
+  --radius-btn:8px;
+  --radius-tag:999px;
+  --radius-banner:18px;
+  --shadow:0 2px 10px rgba(27,31,59,.07);
+  --shadow-hover:0 8px 24px rgba(27,31,59,.14);
+  --sticky-offset:112px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-offset)}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  font-size:16px;line-height:1.75;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:20px}
+li{margin-bottom:6px}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* ============ 吸顶公告条 + 页头 ============ */
+.sticky-top{position:sticky;top:0;z-index:60}
+.notice-bar{
+  background:linear-gradient(90deg,var(--brand),var(--brand-2));
+  color:#f4f2f8;font-size:13px;
+  display:flex;align-items:center;gap:14px;
+  padding:7px 18px;overflow:hidden;
+}
+.notice-bar .nb-brand{font-weight:700;letter-spacing:.5px;color:#f6d365;white-space:nowrap}
+.notice-bar .nb-items{display:flex;gap:20px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
+.notice-bar .nb-items::-webkit-scrollbar{display:none}
+.notice-bar .nb-item{white-space:nowrap}
+.notice-bar .nb-item b{color:#ffd9e3;font-weight:600}
+.notice-bar .nb-item span{color:#c9c5d8;margin-right:6px}
+
+.site-header{
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:1360px;margin:0 auto;padding:10px 22px;
+  display:flex;align-items:center;gap:22px;
+}
+.logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.logo svg{width:38px;height:38px;flex-shrink:0}
+.logo-text{font-size:19px;font-weight:800;color:var(--brand);letter-spacing:.5px;white-space:nowrap}
+.main-nav{display:flex;gap:4px;flex-wrap:wrap;flex:1}
+.main-nav a{
+  padding:6px 11px;border-radius:var(--radius-btn);font-size:14px;color:var(--text-2);
+  transition:background .18s,color .18s;white-space:nowrap;
+}
+.main-nav a:hover{background:var(--accent-soft);color:var(--accent)}
+.search-box{position:relative;flex-shrink:0}
+.search-box input{
+  width:200px;padding:8px 12px;border:1px solid var(--line);border-radius:var(--radius-btn);
+  font-size:14px;background:var(--panel-2);color:var(--text);
+}
+.search-box input:focus{background:#fff;border-color:var(--accent);outline:none}
+.search-feedback{
+  position:absolute;top:calc(100% + 6px);right:0;width:280px;background:#fff;
+  border:1px solid var(--line);border-radius:var(--radius-btn);box-shadow:var(--shadow-hover);
+  font-size:13px;padding:10px 12px;display:none;color:var(--text-2);z-index:70;
+}
+.search-feedback.show{display:block}
+.hamburger{
+  display:none;background:none;border:1px solid var(--line);border-radius:var(--radius-btn);
+  padding:7px 10px;color:var(--brand);font-size:18px;line-height:1;
+}
+.nav-overlay{display:none;position:fixed;inset:0;background:rgba(20,18,30,.45);z-index:55}
+.nav-overlay.show{display:block}
+
+/* ============ 首屏 ============ */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 88% -10%,rgba(194,69,107,.20),transparent 60%),
+    radial-gradient(700px 380px at 4% 110%,rgba(201,154,46,.18),transparent 62%),
+    linear-gradient(160deg,#232748 0%,#1b1f3b 55%,#171a33 100%);
+  color:#f4f2f8;
+}
+.hero-inner{
+  max-width:1360px;margin:0 auto;padding:52px 22px 46px;
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:36px;align-items:center;
+}
+.hero-badge{
+  display:inline-block;font-size:12.5px;letter-spacing:1px;color:#f6d365;
+  border:1px solid rgba(246,211,101,.45);border-radius:var(--radius-tag);
+  padding:3px 12px;margin-bottom:16px;
+}
+.hero h1{
+  font-size:clamp(30px,3.6vw,46px);letter-spacing:1px;margin-bottom:16px;
+  color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.25);
+}
+.hero-lead{font-size:16px;line-height:1.9;color:#d8d4e6;max-width:560px;margin-bottom:22px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.btn-primary,.btn-ghost{
+  display:inline-block;padding:10px 22px;border-radius:var(--radius-btn);font-size:15px;font-weight:600;
+  transition:transform .18s,box-shadow .18s,background .18s;
+}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 4px 16px rgba(194,69,107,.42)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(194,69,107,.55)}
+.btn-ghost{border:1px solid rgba(255,255,255,.4);color:#f4f2f8}
+.btn-ghost:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}
+.hero-stats{display:flex;gap:26px;flex-wrap:wrap;font-size:13px;color:#a9a5c0}
+.hero-stats b{display:block;font-size:20px;color:#f6d365;font-weight:800;line-height:1.2}
+
+.hero-visual{position:relative;height:280px}
+.hero-visual .hv-card{
+  position:absolute;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);
+  border-radius:14px;padding:12px 14px;backdrop-filter:blur(4px);
+  font-size:12.5px;color:#ded9ee;width:186px;box-shadow:0 10px 30px rgba(0,0,0,.22);
+}
+.hero-visual .hv-card b{display:block;font-size:14px;color:#fff;margin-bottom:4px}
+.hero-visual .hv-card em{font-style:normal;color:#f6d365;font-size:11.5px;letter-spacing:.5px}
+.hv-1{top:0;left:6%;animation:floatA 7s ease-in-out infinite}
+.hv-2{top:78px;right:0;animation:floatB 8s ease-in-out infinite}
+.hv-3{bottom:0;left:22%;animation:floatA 9s ease-in-out infinite}
+@keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+.hv-ring{
+  position:absolute;right:26%;top:36%;width:150px;height:150px;border-radius:50%;
+  border:1px dashed rgba(246,211,101,.4);
+}
+.hv-ring::after{
+  content:"";position:absolute;inset:26px;border-radius:50%;
+  background:radial-gradient(circle,rgba(194,69,107,.5),transparent 70%);
+}
+
+/* ============ 三栏门户 ============ */
+.layout{
+  max-width:1360px;margin:0 auto;padding:34px 22px 40px;
+  display:grid;grid-template-columns:184px minmax(0,1fr) 252px;gap:26px;align-items:start;
+}
+.channel-col{position:sticky;top:var(--sticky-offset)}
+.channel-box{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  padding:14px 12px;box-shadow:var(--shadow);
+}
+.channel-box h2{
+  font-size:13px;color:var(--text-3);letter-spacing:1.5px;font-weight:700;
+  margin-bottom:10px;padding-left:6px;
+}
+.channel-list{list-style:none;margin:0;padding:0}
+.channel-list li{margin-bottom:2px}
+.channel-list a{
+  display:block;padding:7px 10px;border-radius:var(--radius-btn);font-size:14px;color:var(--text-2);
+  transition:background .16s,color .16s,padding-left .16s;position:relative;
+}
+.channel-list a:hover{background:var(--panel-2);color:var(--brand)}
+.channel-list a.active{background:var(--accent-soft);color:var(--accent);font-weight:600;padding-left:14px}
+.channel-list a.active::before{
+  content:"";position:absolute;left:5px;top:50%;transform:translateY(-50%);
+  width:3px;height:15px;border-radius:2px;background:var(--accent);
+}
+.channel-note{margin-top:12px;padding:10px;background:var(--panel-2);border-radius:10px;font-size:12px;color:var(--text-3);line-height:1.7}
+
+.main-col{min-width:0}
+.aside-col{position:sticky;top:var(--sticky-offset);display:flex;flex-direction:column;gap:18px}
+.aside-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  padding:16px;box-shadow:var(--shadow);
+}
+.aside-card h2{font-size:15px;margin-bottom:12px;color:var(--brand);display:flex;align-items:center;gap:6px}
+.aside-card h2::before{content:"";width:4px;height:15px;background:var(--accent);border-radius:2px}
+.rank-list{list-style:none;margin:0;padding:0;counter-reset:rank}
+.rank-list li{counter-increment:rank;display:flex;gap:10px;font-size:13.5px;padding:7px 0;border-bottom:1px dashed var(--line);line-height:1.5}
+.rank-list li:last-child{border-bottom:none}
+.rank-list li::before{
+  content:counter(rank);flex-shrink:0;width:20px;height:20px;border-radius:6px;
+  background:var(--panel-2);color:var(--text-3);font-size:12px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;margin-top:2px;
+}
+.rank-list li:nth-child(1)::before{background:var(--accent);color:#fff}
+.rank-list li:nth-child(2)::before{background:#e08ba4;color:#fff}
+.rank-list li:nth-child(3)::before{background:#eebfcb;color:#7a3245}
+.rank-list a{color:var(--text-2)}
+.rank-list a:hover{color:var(--accent)}
+.mini-tags{display:flex;flex-wrap:wrap;gap:7px}
+.mini-tags a{
+  font-size:12.5px;padding:4px 11px;border-radius:var(--radius-tag);
+  background:var(--panel-2);color:var(--text-2);transition:background .16s,color .16s;
+}
+.mini-tags a:hover{background:var(--accent);color:#fff}
+
+/* ============ 通用板块 ============ */
+.section{margin-bottom:40px;scroll-margin-top:var(--sticky-offset)}
+.section-head{margin-bottom:16px}
+.section-head h2{
+  font-size:21px;color:var(--brand);display:flex;align-items:center;gap:9px;flex-wrap:wrap;
+}
+.section-head h2::before{content:"";width:5px;height:20px;background:linear-gradient(var(--accent),var(--gold));border-radius:3px;flex-shrink:0}
+.section-head .sub{font-size:13.5px;color:var(--text-3);margin-top:5px;margin-left:14px}
+
+/* 概览 */
+.overview{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  padding:20px 22px;box-shadow:var(--shadow);font-size:15px;color:var(--text-2);
+}
+.overview p:last-child{margin-bottom:0}
+.overview strong{color:var(--brand)}
+
+/* 精选卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.work-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;
+  transition:transform .2s,box-shadow .2s;
+}
+.work-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.work-card .thumb{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--panel-2)}
+.work-card .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.work-card:hover .thumb img{transform:scale(1.045)}
+.work-card .code-chip{
+  position:absolute;left:10px;top:10px;background:rgba(27,31,59,.86);color:#f6d365;
+  font-size:11.5px;font-weight:700;letter-spacing:.6px;padding:3px 9px;border-radius:var(--radius-tag);
+}
+.work-card .body{padding:13px 15px 15px;display:flex;flex-direction:column;gap:8px;flex:1}
+.work-card h3{font-size:15.5px;color:var(--brand);line-height:1.45}
+.work-card h3 a:hover{color:var(--accent)}
+.work-card .desc{font-size:13.5px;color:var(--text-2);line-height:1.65;margin:0;flex:1}
+.tag-row{display:flex;flex-wrap:wrap;gap:6px}
+.tag{
+  font-size:11.5px;padding:2px 9px;border-radius:var(--radius-tag);
+  background:var(--accent-soft);color:var(--accent);white-space:nowrap;
+}
+.tag.grey{background:var(--panel-2);color:var(--text-3)}
+.work-meta{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--text-3);border-top:1px dashed var(--line);padding-top:8px}
+.work-meta .heat{color:var(--gold);font-weight:700}
+
+/* 更新流 */
+.update-list{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;box-shadow:var(--shadow)}
+.update-item{
+  display:grid;grid-template-columns:74px minmax(0,1fr);gap:14px;
+  padding:13px 18px;border-bottom:1px solid var(--line);align-items:start;
+}
+.update-item:last-child{border-bottom:none}
+.update-item:hover{background:var(--panel-2)}
+.update-date{font-size:12.5px;color:var(--accent);font-weight:700;padding-top:2px;line-height:1.5}
+.update-date span{display:block;color:var(--text-3);font-weight:400;font-size:11.5px}
+.update-item h3{font-size:15px;color:var(--brand);margin-bottom:3px}
+.update-item h3 a:hover{color:var(--accent)}
+.update-item p{font-size:13.5px;color:var(--text-2);margin:0;line-height:1.6}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.cat-item{
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:14px 15px;transition:border-color .18s,transform .18s,box-shadow .18s;box-shadow:var(--shadow);
+}
+.cat-item:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.cat-item b{display:block;font-size:14.5px;color:var(--brand);margin-bottom:3px}
+.cat-item span{font-size:12.5px;color:var(--text-3);line-height:1.55;display:block}
+
+/* 深度解析 */
+.deep-read{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  padding:26px 28px;box-shadow:var(--shadow);font-size:15px;color:var(--text-2);
+}
+.deep-read h3{font-size:17px;color:var(--brand);margin:22px 0 10px;padding-left:12px;border-left:3px solid var(--gold)}
+.deep-read h3:first-of-type{margin-top:6px}
+.deep-read p{line-height:1.85;margin-bottom:12px}
+.deep-read ul{font-size:14.5px;line-height:1.8}
+.deep-read .callout{
+  background:var(--panel-2);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;
+  padding:12px 16px;font-size:14px;margin:14px 0;color:var(--text-2);
+}
+.deep-read .callout b{color:var(--brand)}
+.compare-table{width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0 16px}
+.compare-table th,.compare-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;line-height:1.6}
+.compare-table th{background:var(--panel-2);color:var(--brand);font-weight:700}
+.compare-table td{color:var(--text-2)}
+
+/* 指南步骤 */
+.guide-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.step-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-card);
+  padding:18px 18px 16px;position:relative;box-shadow:var(--shadow);
+}
+.step-card .step-num{
+  display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;
+  border-radius:9px;background:var(--brand);color:#f6d365;font-weight:800;font-size:14px;margin-bottom:10px;
+}
+.step-card h3{font-size:15px;color:var(--brand);margin-bottom:7px}
+.step-card p{font-size:13.5px;color:var(--text-2);margin:0;line-height:1.7}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:10px}
+.faq-list details{
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:0;overflow:hidden;box-shadow:var(--shadow);
+}
+.faq-list details[open]{border-color:var(--accent)}
+.faq-list summary{
+  cursor:pointer;padding:13px 18px;font-size:15px;font-weight:600;color:var(--brand);
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;
+}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"＋";color:var(--accent);font-weight:700;flex-shrink:0}
+.faq-list details[open] summary::after{content:"－"}
+.faq-list .ans{padding:0 18px 15px;font-size:14px;color:var(--text-2);line-height:1.8}
+
+/* 评论 */
+.comment-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:13px}
+.comment-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:14px 16px;box-shadow:var(--shadow);font-size:13.5px;color:var(--text-2);line-height:1.7;
+}
+.comment-card .who{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.avatar{
+  width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--accent-soft),#d9d3f0);
+  color:var(--brand);font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.comment-card .who b{font-size:13px;color:var(--brand)}
+.comment-card .who em{font-style:normal;font-size:11.5px;color:var(--text-3);margin-left:auto}
+.comment-card p{margin:0}
+
+/* 资讯 */
+.news-list{display:flex;flex-direction:column;gap:12px}
+.news-item{
+  background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:15px 18px;box-shadow:var(--shadow);display:grid;grid-template-columns:minmax(0,1fr);gap:4px;
+  transition:border-color .18s;
+}
+.news-item:hover{border-color:var(--accent)}
+.news-item h3{font-size:15.5px;color:var(--brand)}
+.news-item h3 a:hover{color:var(--accent)}
+.news-item .news-meta{font-size:12px;color:var(--text-3);margin-bottom:2px}
+.news-item p{font-size:13.5px;color:var(--text-2);margin:0;line-height:1.7}
+
+/* 推荐标签索引 */
+.reco-index{display:flex;flex-wrap:wrap;gap:9px}
+.reco-index a{
+  font-size:13.5px;padding:7px 15px;border-radius:var(--radius-tag);
+  background:var(--panel);border:1px solid var(--line);color:var(--text-2);
+  transition:background .16s,color .16s,border-color .16s,transform .16s;
+}
+.reco-index a:hover{background:var(--brand);color:#fff;border-color:var(--brand);transform:translateY(-2px)}
+
+/* 时间线 */
+.timeline{position:relative;padding-left:24px}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--accent),var(--line))}
+.tl-item{position:relative;padding-bottom:16px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-24px;top:6px;width:12px;height:12px;border-radius:50%;
+  background:#fff;border:3px solid var(--accent);
+}
+.tl-item b{font-size:14px;color:var(--brand);display:block}
+.tl-item span{font-size:12px;color:var(--gold);font-weight:700;letter-spacing:.5px}
+.tl-item p{font-size:13.5px;color:var(--text-2);margin:3px 0 0;line-height:1.65}
+
+/* 投稿互动 */
+.submit-panel{
+  background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#eee9f6;
+  border-radius:var(--radius-banner);padding:24px 26px;display:grid;
+  grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center;
+}
+.submit-panel h2{font-size:19px;color:#fff;margin-bottom:6px}
+.submit-panel p{font-size:13.5px;color:#c8c3dd;margin:0;max-width:560px;line-height:1.7}
+.submit-panel .btn-primary{white-space:nowrap}
+
+/* 页尾 */
+.site-footer{background:#14172b;color:#b6b2c8;font-size:13.5px;margin-top:20px}
+.footer-inner{max-width:1360px;margin:0 auto;padding:38px 22px 22px}
+.footer-top{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:28px;margin-bottom:26px}
+.footer-brand .logo-text{color:#fff;font-size:18px}
+.footer-brand p{margin-top:12px;line-height:1.8;color:#9a95b0;font-size:13px;max-width:340px}
+.footer-col h3{font-size:14px;color:#fff;margin-bottom:12px;font-weight:700}
+.footer-col ul{list-style:none;padding:0;margin:0}
+.footer-col li{margin-bottom:8px}
+.footer-col a{color:#a8a3bd;font-size:13px;transition:color .16s}
+.footer-col a:hover{color:#f6d365}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding-top:16px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#807b96;
+}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  background:var(--brand);color:#f6d365;border:none;font-size:18px;
+  display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-hover);
+  opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s,transform .25s;z-index:50;
+}
+.to-top.show{opacity:1;visibility:visible}
+.to-top:hover{transform:translateY(-3px)}
+
+/* ============ 响应式 ============ */
+@media(max-width:1100px){
+  .layout{grid-template-columns:170px minmax(0,1fr);}
+  .aside-col{display:none}
+}
+@media(max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;gap:24px}
+  .hero-visual{height:220px;max-width:520px}
+  .footer-top{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .submit-panel{grid-template-columns:1fr}
+}
+@media(max-width:860px){
+  .main-nav{display:none}
+  .main-nav.open{
+    display:flex;position:fixed;top:0;right:0;bottom:0;width:min(78vw,300px);
+    background:#fff;flex-direction:column;gap:2px;padding:66px 16px 20px;z-index:58;
+    box-shadow:-6px 0 26px rgba(0,0,0,.18);overflow-y:auto;
+  }
+  .main-nav.open a{padding:11px 14px;font-size:15px;border-radius:10px}
+  .hamburger{display:block;order:3;margin-left:auto}
+  .search-box{order:2}
+  .search-box input{width:150px}
+}
+@media(max-width:740px){
+  .layout{grid-template-columns:1fr;padding:22px 16px 30px;gap:22px}
+  .channel-col{position:static;order:2}
+  .channel-box{display:none}
+  .main-col{order:1}
+  .hero-inner{padding:36px 18px 34px}
+  .hero h1{font-size:29px}
+  .hero-stats{gap:18px}
+  .card-grid{grid-template-columns:1fr}
+  .comment-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+  .deep-read{padding:20px 18px}
+  .compare-table{font-size:12.5px}
+  .compare-table th,.compare-table td{padding:6px 8px}
+  .footer-top{grid-template-columns:1fr;gap:22px}
+  .notice-bar{font-size:12px;padding:6px 12px;gap:10px}
+  .search-box{display:none}
+  .header-inner{padding:9px 16px;gap:12px}
+  .to-top{right:14px;bottom:18px;width:40px;height:40px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="notice-bar" role="region" aria-label="站点更新公告">
+    <span class="nb-brand">深田咏美作品番号</span>
+    <div class="nb-items">
+      <span class="nb-item"><span>11-07</span><b>单体番号库</b>补入 2024 年 3 部未收录条目</span>
+      <span class="nb-item"><span>11-05</span><b>共演合集</b>新增 6 条，标注共演阵容</span>
+      <span class="nb-item"><span>11-02</span><b>番号辨析</b>更新「同名不同厂」对照 4 组</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="/#top" aria-label="深田咏美作品番号 首页">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#1b1f3b"/>
+          <path d="M16 44V20h10c7 0 11 4 11 10s-4 10-11 10h-4v4z" fill="#f2b8c6"/>
+          <circle cx="46" cy="24" r="6" fill="#f6d365"/>
+          <rect x="14" y="48" width="36" height="3" rx="1.5" fill="#c2456b"/>
+        </svg>
+        <span class="logo-text">深田咏美作品番号</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选作品</a>
+        <a href="/#updates">番号动态</a>
+        <a href="/#category">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">观看指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">观众评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#submit">投稿互动</a>
+      </nav>
+
+      <div class="search-box">
+        <input type="search" id="siteSearch" placeholder="搜番号 / 作品名 / 类型" aria-label="站内内容搜索">
+        <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="打开导航菜单" aria-expanded="false" aria-controls="mainNav">☰</button>
+    </div>
+  </header>
+</div>
+
+<div class="nav-overlay" id="navOverlay" hidden></div>
+
+<main id="top">
+
+  <!-- ============ 首屏 ============ -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-badge">番号索引 · 版本比对 · 类型解析</span>
+        <h1 id="heroTitle">深田咏美作品番号</h1>
+        <p class="hero-lead">按厂牌与发行年份整理的番号索引：单体作品、共演合集、VR 与出道期条目的编号规则、版本差异和挑选顺序，一次查清。</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="/#picks">浏览精选作品</a>
+          <a class="btn-ghost" href="/#deep">读番号辨析</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>860+</b>收录条目</div>
+          <div><b>12</b>厂牌分组</div>
+          <div><b>11-07</b>最近补录</div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hv-ring"></div>
+        <div class="hv-card hv-1"><em>SSIS 单体</em><b>SSIS-421</b>2023 · 单体作品</div>
+        <div class="hv-card hv-2"><em>共演合集</em><b>MIDE-908</b>2022 · 双人共演</div>
+        <div class="hv-card hv-3"><em>出道期</em><b>STARS-078</b>2019 · 早期条目</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 三栏布局 ============ -->
+  <div class="layout">
+
+    <!-- 左：频道索引 -->
+    <aside class="channel-col">
+      <div class="channel-box">
+        <h2>频道索引</h2>
+        <ul class="channel-list">
+          <li><a href="/#overview" class="active">领域概览</a></li>
+          <li><a href="/#picks">精选作品</a></li>
+          <li><a href="/#updates">番号动态</a></li>
+          <li><a href="/#category">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">观看指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">观众评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#reco">相关推荐</a></li>
+          <li><a href="/#timeline">发行时间线</a></li>
+          <li><a href="/#submit">投稿互动</a></li>
+        </ul>
+        <div class="channel-note">番号以厂牌前缀区分，同前缀不同数字代表不同发行批次。</div>
+      </div>
+    </aside>
+
+    <!-- 中：主内容 -->
+    <div class="main-col">
+
+      <!-- 1 领域概览 -->
+      <section class="section" id="overview">
+        <div class="section-head">
+          <h2>领域概览：番号背后的发行体系</h2>
+          <p class="sub">厂牌前缀、年份批次与作品形态的基本划分</p>
+        </div>
+        <div class="overview">
+          <p>深田咏美的作品体量大、跨度长，单靠作品名检索容易撞上同名或改标题的条目。番号是更稳的索引单位——它由厂牌字母前缀加数字组成，例如 <strong>SSIS、STARS、MIDE、PRED、JUFE</strong> 分别对应 S1、SOD、MOODYZ、PREMIUM、FALENO 等发行方。前缀决定发行方与作品线，数字段则对应具体的发行批次。</p>
+          <p>按形态拆，内容大致分四类：<strong>单体作品</strong>（单人主演，番号最常见）、<strong>共演合集</strong>（双人或多人，番号常带 MIDE、MIRD 段）、<strong>VR 作品</strong>（前缀多为 VR 或 KVR，需头显或 360 播放器）、<strong>出道期与复归期条目</strong>（2019 年前后 STARS 段，画质与企划方向差异明显）。</p>
+          <p>2026 年回看的几个具体方向：2021—2023 年的 SSIS 段单体作品在画质与企划完整度上比较均衡；2020 年前后的共演合集把双人互动做成固定结构，适合按类型批量看；出道期 STARS 段虽然画质一般，但记录了她早期的表演风格，和后期差异很大。各家厂牌的番号命名规则并不统一，查番号时先认前缀，再看数字段，比按标题猜更可靠。</p>
+        </div>
+      </section>
+
+      <!-- 2 精选作品 -->
+      <section class="section" id="picks">
+        <div class="section-head">
+          <h2>精选作品：按番号可查的具体条目</h2>
+          <p class="sub">覆盖单体、共演、VR 与出道期四类形态</p>
+        </div>
+        <div class="card-grid">
+
+          <article class="work-card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/ssis421a/400/300" width="400" height="300" loading="lazy" alt="SSIS-421 单体作品封面构图示意">
+              <span class="code-chip">SSIS-421</span>
+            </div>
+            <div class="body">
+              <h3><a href="/#picks">SSIS-421 · 都市职场企划</a></h3>
+              <p class="desc">2023 年 S1 发行，企划线完整，开场到收尾有明确叙事结构，适合作为单体作品的入门参照。</p>
+              <div class="tag-row"><span class="tag">单体</span><span class="tag grey">S1</span><span class="tag grey">2023</span></div>
+              <div class="work-meta"><span>热度 9,420</span><span class="heat">★ 4.6</span></div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/mide908b/400/300" width="400" height="300" loading="lazy" alt="MIDE-908 共演合集封面构图示意">
+              <span class="code-chip">MIDE-908</span>
+            </div>
+            <div class="body">
+              <h3><a href="/#picks">MIDE-908 · 双人共演合集</a></h3>
+              <p class="desc">2022 年 MOODYZ 段，双人互动按固定三段式铺开，共演阵容与分镜节奏是主要看点。</p>
+              <div class="tag-row"><span class="tag">共演</span><span class="tag grey">MOODYZ</span><span class="tag grey">2022</span></div>
+              <div class="work-meta"><span>热度 8,150</span><span class="heat">★ 4.4</span></div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/stars078c/400/300" width="400" height="300" loading="lazy" alt="STARS-078 出道期作品封面构图示意">
+              <span class="code-chip">STARS-078</span>
+            </div>
+            <div class="body">
+              <h3><a href="/#picks">STARS-078 · 出道期早期条目</a></h3>
+              <p class="desc">2019 年 SOD 段，画质偏早期规格，但表演节奏与后期差异明显，适合做风格对照。</p>
+              <div class="tag-row"><span class="tag">出道期</span><span class="tag grey">SOD</span><span class="tag grey">2019</span></div>
+              <div class="work-meta"><span>热度 7,300</span><span class="heat">★ 4.1</span></div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/pred312d/400/300" width="400" height="300" loading="lazy" alt="PRED-312 剧情长片封面构图示意">
+              <span class="code-chip">PRED-312</span>
+            </div>
+            <div class="body">
+              <h3><a href="/#picks">PRED-312 · 剧情长片线</a></h3>
+              <p class="desc">PREMIUM 段的长片企划，单部时长超过常规条目，剧情铺陈占比高，适合整段看。</p>
+              <div class="tag-row"><span class="tag">剧情长片</span><span class="tag grey">PREMIUM</span><span class="tag grey">2021</span></div>
+              <div class="work-meta"><span>热度 6,880</span><span class="heat">★ 4.3</span></div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/jufe205e/400/300" width="400" height="300" loading="lazy" alt="JUFE-205 单体作品封面构图示意">
+              <span class="code-chip">JUFE-205</span>
+            </div>
+            <div class="body">
+              <h3><a href="/#picks">JUFE-205 · 生活场景企划</a></h3>
+              <p class="desc">FALENO 段，场景搭建偏日常向，镜头语言比同年前缀条目更克制，适合偏好轻叙事的观众。</p>
+              <div class="tag-row"><span class="tag">单体</span><span class="tag grey">FALENO</span><span class="tag grey">2022</span></div>
+              <div class="work-meta"><span>热度 5,960</span><span class="heat">★ 4.2</span></div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/vrss102f/400/300" width="400" height="300" loading="lazy" alt="VRSS-102 VR 作品封面构图示意">
+              <span class="code-chip">VRSS-102</span>
+            </div>
+            <div class="body">
+              <h3><a href="/#picks">VRSS-102 · VR 视角条目</a></h3>
+              <p class="desc">需头显或 360 播放器观看，机位与平面作品完全不同，普通播放器打开会出现画面拉伸。</p>
+              <div class="tag-row"><span class="tag">VR</span><span class="tag grey">2023</span><span class="tag grey">需头显</span></div>
+              <div class="work-meta"><span>热度 4,720</span><span class="heat">★ 4.0</span></div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/mird665g/400/300" width="400" height="300" loading="lazy" alt="MIRD-665 多人合集封面构图示意">
+              <span class="code-chip">MIRD-665</span>
+            </div>
+            <div class="body">
+              <h3><a href="/#picks">MIRD-665 · 多人合集</a></h3>
+              <p class="desc">MOODYZ 的多人线，出场人数多、分段清晰，单段时长比双人共演短，适合碎片时间。</p>
+              <div class="tag-row"><span class="tag">合集</span><span class="tag grey">MOODYZ</span><span class="tag grey">2020</span></div>
+              <div class="work-meta"><span>热度 5,140</span><span class="heat">★ 4.0</span></div>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/ssis198h/400/300" width="400" height="300" loading="lazy" alt="SSIS-198 单体作品封面构图示意">
+              <span class="code-chip">SSIS-198</span>
+            </div>
+            <div class="body">
+              <h3><a href="/#picks">SSIS-198 · 早期 SSIS 段</a></h3>
+              <p class="desc">2021 年 S1 段，属于 SSIS 前缀较早的数字段，画质规格与后期同前缀条目有小幅差别。</p>
+              <div class="tag-row"><span class="tag">单体</span><span class="tag grey">S1</span><span class="tag grey">2021</span></div>
+              <div class="work-meta"><span>热度 6,220</span><span class="heat">★ 4.3</span></div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 3 番号动态 -->
+      <section class="section" id="updates">
+        <div class="section-head">
+          <h2>番号动态：本周补录与版本修订</h2>
+          <p class="sub">条目层更新，标注具体番号与改动内容</p>
+        </div>
+        <div class="update-list">
+          <div class="update-item">
+            <div class="update-date">11-07<span>补录</span></div>
+            <div>
+              <h3><a href="/#updates">SSIS-421 补充发行方与企划线信息</a></h3>
+              <p>核对后确认该条目属 S1 常规单体线，非特别企划，此前标注的「特别篇」已更正。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="update-date">11-06<span>新增</span></div>
+            <div>
+              <h3><a href="/#updates">MIDE-908 共演阵容补全</a></h3>
+              <p>补入第二共演者姓名与出场分段，原条目只记录了单人信息，共演结构不完整。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="update-date">11-05<span>辨析</span></div>
+            <div>
+              <h3><a href="/#updates">STARS-078 与 STARS-079 区分说明</a></h3>
+              <p>两条番号相邻但发行月份相差两周，企划方向不同，此前常被混为同一部。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="update-date">11-04<span>修订</span></div>
+            <div>
+              <h3><a href="/#updates">VRSS-102 播放要求标注</a></h3>
+              <p>补注需 360 播放器或头显，平面播放器直接打开会出现画面拉伸，条目页已加提示。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="update-date">11-03<span>新增</span></div>
+            <div>
+              <h3><a href="/#updates">JUFE-205 场景类型归类</a></h3>
+              <p>归入生活场景企划线，与同前缀的职场向条目分列，方便按类型筛。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="update-date">11-01<span>补录</span></div>
+            <div>
+              <h3><a href="/#updates">PRED-312 时长与分段信息</a></h3>
+              <p>补入总时长与剧情段/互动段的分界点，长片条目此前只标了总时长。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="update-date">10-30<span>修订</span></div>
+            <div>
+              <h3><a href="/#updates">MIRD-665 出场顺序更正</a></h3>
+              <p>原记录的出场顺序与片源不一致，按实际分段重新排列，共 5 人。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="update-date">10-28<span>新增</span></div>
+            <div>
+              <h3><a href="/#updates">SSIS-198 画质规格标注</a></h3>
+              <p>标注为早期 SSIS 段规格，与 2023 年同前缀条目的分辨率不同，避免按新规格预期。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="update-date">10-26<span>辨析</span></div>
+            <div>
+              <h3><a href="/#updates">同名不同厂的 4 组番号对照</a></h3>
+              <p>整理出 4 组标题相近但前缀不同的条目，逐组列出厂牌与发行年份差异。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <div class="update-date">10-24<span>补录</span></div>
+            <div>
+              <h3><a href="/#updates">出道期条目补 3 条</a></h3>
+              <p>补入 2019 年 STARS 段 3 条早期番号，画质说明与企划方向同步标注。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="section" id="category">
+        <div class="section-head">
+          <h2>分类入口：按番号前缀与类型分流</h2>
+          <p class="sub">8 个类别，对应厂牌线或作品形态</p>
+        </div>
+        <div class="cat-grid">
+          <a class="cat-item" href="/#picks"><b>SSIS 单体线</b><span>S1 发行，数字段覆盖 2021—2023</span></a>
+          <a class="cat-item" href="/#picks"><b>STARS 出道期</b><span>SOD 段，2019 年前后早期条目</span></a>
+          <a class="cat-item" href="/#picks"><b>MIDE 共演合集</b><span>双人共演，固定三段式结构</span></a>
+          <a class="cat-item" href="/#picks"><b>MIRD 多人合集</b><span>3 人以上，分段短、出场多</span></a>
+          <a class="cat-item" href="/#picks"><b>PRED 剧情长片</b><span>PREMIUM 段，单部时长偏长</span></a>
+          <a class="cat-item" href="/#picks"><b>JUFE 生活场景</b><span>FALENO 段，日常向场景企划</span></a>
+          <a class="cat-item" href="/#picks"><b>VR 视角条目</b><span>需头显或 360 播放器</span></a>
+          <a class="cat-item" href="/#picks"><b>同名辨析组</b><span>标题相近、前缀不同的对照条目</span></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="section" id="deep">
+        <div class="section-head">
+          <h2>番号辨析：前缀、数字段与版本差异</h2>
+          <p class="sub">拆开看番号结构，判断一个条目到底是不是同一部</p>
+        </div>
+        <div class="deep-read">
+          <p>番号看起来只是一串字母加数字，实际承担了三层信息：发行方、作品线、发行批次。把这三层拆开，很多「同一部作品为什么有两种封面」的疑问会自己消掉。</p>
+
+          <h3>前缀决定发行方，不决定内容质量</h3>
+          <p>SSIS 对应 S1，STARS 对应 SOD，MIDE 与 MIRD 都属 MOODYZ 但分属不同作品线，PRED 是 PREMIUM 的常规前缀，JUFE 属 FALENO。前缀换掉，意味着发行方、企划团队、后期规格都可能换掉。2021 年的 SSIS-198 和 2023 年的 SSIS-421 同属 S1 单体线，但分辨率与色彩规格有差别，这是批次问题，不是条目本身的问题。</p>
+          <div class="callout"><b>可核对的结构：</b>判断一个番号是不是正片，先看前缀是否属于已知发行方列表，再看数字段是否落在该发行方公开的发行区间内。两项都对不上，多半是改标题的搬运版本。</div>
+
+          <h3>数字段相邻，不等于内容相邻</h3>
+          <p>STARS-078 与 STARS-079 番号连号，发行月份却相差两周，企划方向也不同——一部偏生活场景，一部偏职场设定。连号在发行排期上是相邻批次，不代表同一企划拆分。反过来，MIDE-908 与 MIRD-665 数字段差得远，但都属 MOODYZ 体系，共演结构有可比的固定框架。按数字段挨着找「上下集」，多数时候会落空。</p>
+
+          <table class="compare-table">
+            <thead>
+              <tr><th>番号</th><th>发行方</th><th>作品线</th><th>发行年份</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>SSIS-198</td><td>S1</td><td>单体</td><td>2021</td></tr>
+              <tr><td>SSIS-421</td><td>S1</td><td>单体（职场企划）</td><td>2023</td></tr>
+              <tr><td>STARS-078</td><td>SOD</td><td>出道期条目</td><td>2019</td></tr>
+              <tr><td>MIDE-908</td><td>MOODYZ</td><td>双人共演</td><td>2022</td></tr>
+              <tr><td>MIRD-665</td><td>MOODYZ</td><td>多人合集</td><td>2020</td></tr>
+              <tr><td>PRED-312</td><td>PREMIUM</td><td>剧情长片</td><td>2021</td></tr>
+              <tr><td>JUFE-205</td><td>FALENO</td><td>生活场景</td><td>2022</td></tr>
+              <tr><td>VRSS-102</td><td>VR 线</td><td>VR 视角</td><td>2023</td></tr>
+            </tbody>
+          </table>
+
+          <h3>版本差异来自哪几个环节</h3>
+          <p>同一个番号出现两种封面、两种时长，通常来自三个环节，而非内容被「改过」：</p>
+          <ul>
+            <li><b>发行批次</b>：初版与再版封面不同，再版常换主视觉，正片内容一致。</li>
+            <li><b>平台转码</b>：不同平台的分辨率与码率不同，时长可能因片头片尾裁切差几十秒。</li>
+            <li><b>合集重编</b>：部分条目被收进合集后重新分段，番号不变但章节顺序调整。</li>
+          </ul>
+          <p>这三个环节里，只有第三个会改变观看顺序。遇到时长对不上，先比对章节数，章节数一致基本就是转码差异。</p>
+
+          <h3>VR 条目要单独判断</h3>
+          <p>VRSS-102 这类带 VR 前缀的条目，机位是 180 度或 360 度，平面播放器打开会出现画面拉伸或只显示局部。判断方法很直接：看前缀是否含 VR，看条目说明是否标注播放器要求。把它当普通单体作品去找，找得到但看不了，这是最常见的误判。</p>
+
+          <h3>出道期条目的参照价值</h3>
+          <p>2019 年的 STARS 段条目，画质规格不如后期，但表演节奏和镜头距离跟 2022 年之后的条目差别明显。把它当前期风格参照，比当「画质差所以不看」更合理——差别本身就是信息。按年份排序看，能看出企划方向从场景铺陈向互动密度转移的轨迹，这条轨迹在番号前缀的分布上也能对上。</p>
+        </div>
+      </section>
+
+      <!-- 6 观看指南 -->
+      <section class="section" id="guide">
+        <div class="section-head">
+          <h2>观看指南：按什么顺序投入时间</h2>
+          <p class="sub">从形态到条目，四步缩小范围</p>
+        </div>
+        <div class="guide-steps">
+          <div class="step-card">
+            <span class="step-num">1</span>
+            <h3>先定形态</h3>
+            <p>单体、共演、VR 三类观看门槛不同。VR 要设备，共演看互动密度，单体看企划完整度。先定一类，再往下筛。</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">2</span>
+            <h3>认前缀挑发行方</h3>
+            <p>偏剧情长片看 PRED 段，偏日常场景看 JUFE 段，偏固定结构看 MIDE 段。前缀选错，后面筛得再细也白费。</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">3</span>
+            <h3>比对年份批次</h3>
+            <p>2021—2023 年的 SSIS 段规格稳定，2019—2020 年条目画质偏早期。同一企划方向优先选后期批次。</p>
+          </div>
+          <div class="step-card">
+            <span class="step-num">4</span>
+            <h3>查章节数与时长</h3>
+            <p>两个来源时长差几十秒属转码差异，章节数差一段才可能是不同版本。比对章节数比比对时长快。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="section" id="faq">
+        <div class="section-head">
+          <h2>常见问题：番号查证与版本判断</h2>
+          <p class="sub">6 个高频疑问</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>SSIS-421 和 SSIS-198 是同一部作品的两个版本吗？</summary>
+            <div class="ans">不是。两条番号分属 2021 年与 2023 年不同发行批次，企划方向也不同，SSIS-198 偏常规单体线，SSIS-421 是职场企划。数字段相差较远，正片内容不重叠。</div>
+          </details>
+          <details>
+            <summary>MIDE 和 MIRD 开头的番号有什么区别？</summary>
+            <div class="ans">两个前缀都属 MOODYZ 体系，MIDE 段以双人共演为主，结构固定为三段式；MIRD 段是多人合集，出场人数 3 人以上，单段时长短。看共演互动选 MIDE，看多阵容选 MIRD。</div>
+          </details>
+          <details>
+            <summary>同一番号搜到两种封面，哪一个才是原版？</summary>
+            <div class="ans">初版与再版的封面不同属常见情况，正片内容一致。判断依据是发行批次：再版通常换主视觉但保留原番号。章节数一致就可以视为同一部。</div>
+          </details>
+          <details>
+            <summary>VR 前缀的条目用普通播放器能看吗？</summary>
+            <div class="ans">能打开但画面会拉伸或只显示局部。VRSS 这类条目是 180 度或 360 度机位，需要头显或支持 360 播放的播放器，普通平面播放器无法还原视角。</div>
+          </details>
+          <details>
+            <summary>STARS-078 和 STARS-079 是上下集关系吗？</summary>
+            <div class="ans">不是。两条番号连号但发行月份差两周，企划方向不同，一部偏生活场景、一部偏职场设定。连号只说明发行排期相邻，不代表内容拆分成上下集。</div>
+          </details>
+          <details>
+            <summary>2019 年的出道期条目还值得看吗？</summary>
+            <div class="ans">看目的。画质规格不如 2022 年之后的条目，但表演节奏和镜头距离差异明显，作为前期风格参照有对照价值。想看清爽画质就直接跳到 2021 年后的 SSIS 段。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8 评论 -->
+      <section class="section" id="comments">
+        <div class="section-head">
+          <h2>观众评论：具体条目与具体毛病</h2>
+          <p class="sub">16 条，按时间倒序排列</p>
+        </div>
+        <div class="comment-grid">
+
+          <div class="comment-card">
+            <div class="who"><span class="avatar">阿</span><b>阿柚不加冰</b><em>11-07</em></div>
+            <p>SSIS-421 的职场线铺垫比想象中长，前二十分钟基本在铺场景。赶时间的话从后半段看更划算。</p>
+          </div>
+          <div class="comment-card">
+            <div class="who"><span class="avatar">路</span><b>路过的番号党</b><em>11-07</em></div>
+            <p>MIDE-908 双人分段挺清楚，但第二段镜头切得有点碎，看久了眼睛累。</p>
+          </div>
+          <div class="comment-card">
+            <div class="who"><span class="avatar">卡</span><b>卡带机修理工</b><em>11-06</em></div>
+            <p>找 STARS-078 找了半天，结果和 079 根本不是一部。连号这个坑我踩过两次了。</p>
+          </div>
+          <div class="comment-card">
+            <div class="who"><span class="avatar">半</span><b>半糖去冰</b><em>11-06</em></div>
+            <p>VRSS-102 用普通播放器打开直接糊成一片，后来借了朋友的设备才看明白。说明里真该早点写清楚。</p>
+          </div>
+          <div class="comment-card">
+            <div class="who"><span class="avatar">老</span><b>老陈的硬盘</b><em>11-05</em></div>
+            <p>PRED-312 时长确实长，剧情段和互动段分界大概在一小时出头，长片线里算铺得比较满的。</p>
+          </div>
+          <div class="comment-card">
+            <div class="who"><span class="avatar">橘</span><b>橘子汽水少冰</b><em>11-05</em></div>
+            <p>JUFE 段的场景搭得挺日常，没什么夸张布景，这点比同年前缀的条目舒服。</p>
+          </div>
+          <div class="comment-card">
+            <div class="who"><span class="avatar">番</span><b>番号收集癖</b><em>11-04</em></div>
+            <p>MIRD-665 出场顺序之前记错了，按实际分段重排才对。五人分段确实短，一段十来分钟。</p>
+          </div>
+          <div class="comment-card">
+            <div class="who"><span class="avatar">周</span><b>周末补片人</b><em>11-04</em></div>
+            <p>SSIS-198 和 421 画质放一起比，差别能看出来，但没到影响观看的程度。别被「早期」两个字吓到。</p>
+          </div>
+          <div class="comment-card">
+            <div class="who"><span class="avatar">一</span><b>一只咸鱼</b><em>11-03</em></div>
+            <p>共演合集看多了会腻，三段式结构太固定，换哪部都差不多。偶尔回去看单体反而新鲜。</p>
+          </div>
+          <div class="comment-card">
+            <div class="who"><span class="avatar">奈</span><b>奈良的鹿</b><em>11-03</em></div>
+            <p>同一番号两种封面我遇到过，章节数一模一样，就是换了张主图，内容没差。</p>
+          </div>
+          <div class="comment-card">
+            <div class="who"><span class="avatar">北</span><b>北斗七星勺</b><em>11-02</em></div>
+            <p>2019 年那批画质确实一般，但镜头靠得近，跟现在这种拉开距离的拍法完全两种感觉。</p>
+          </div>
+          <div class="comment-card">
+            <div class="who"><span class="avatar">小</span><b>小满未满</b><em>11-02</em></div>
+            <p>今天又对了一遍时长，两个来源差四十秒，章节数一致，那就不是版本问题。</p>
+          </div>
+          <div class="comment-card">
+            <div class="who"><span class="avatar">竹</span><b>竹荚鱼刺身</b><em>11-01</em></div>
+            <p>说实话分不清 SSIS 和 STARS 的区别，看完对照表才明白是发行方不一样。</p>
+          </div>
+          <div class="comment-card">
+            <div class="who"><span class="avatar">玖</span><b>玖号放映厅</b><em>10-31</em></div>
+            <p>JUFE-205 镜头语言克制，但节奏偏慢，习惯快节奏的可能看不进去。</p>
+          </div>
+          <div class="comment-card">
+            <div class="who"><span class="avatar">锅</span><b>锅巴配可乐</b><em>10-30</em></div>
+            <p>补录速度还行，上周提的 MIDE-908 共演信息这周就补上了。</p>
+          </div>
+          <div class="comment-card">
+            <div class="who"><span class="avatar">石</span><b>石榴味的夏天</b><em>10-29</em></div>
+            <p>最近天气转凉，窝在家里按着时间线一部部往前看，倒成了固定节目。</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 9 资讯 -->
+      <section class="section" id="news">
+        <div class="section-head">
+          <h2>相关资讯：发行与版本层面的动态</h2>
+          <p class="sub">6 条，含具体日期与当事方</p>
+        </div>
+        <div class="news-list">
+          <article class="news-item">
+            <div class="news-meta">2026-11-06 · 发行方公告</div>
+            <h3><a href="/#news">S1 公布 2024 年 SSIS 段补录清单，涉及 3 条早期未收录番号</a></h3>
+            <p>补录清单标注了 3 条 2024 年发行但未进常规索引的番号，其中 2 条为单体线、1 条为企划合集，数字段落在 SSIS-500 之后。</p>
+          </article>
+          <article class="news-item">
+            <div class="news-meta">2026-11-04 · 平台转码</div>
+            <h3><a href="/#news">MOODYZ 段部分条目标注新码率，MIDE-908 在列</a></h3>
+            <p>新码率版本与旧版章节数一致，时长差约 30 秒，差异来自片头裁切，正片内容未调整。</p>
+          </article>
+          <article class="news-item">
+            <div class="news-meta">2026-11-02 · 版本修订</div>
+            <h3><a href="/#news">STARS-078 再版封面更换，番号与章节数保持不变</a></h3>
+            <p>再版换主视觉后，部分渠道仍挂初版封面，两边章节数均为 6 段，可视为同一部。</p>
+          </article>
+          <article class="news-item">
+            <div class="news-meta">2026-10-30 · 播放器适配</div>
+            <h3><a href="/#news">VRSS 段新增 360 播放器适配说明，覆盖 4 条 VR 条目</a></h3>
+            <p>说明列明 180 度与 360 度机位的区分方式，平面播放器打开会提示切换，不再直接拉伸。</p>
+          </article>
+          <article class="news-item">
+            <div class="news-meta">2026-10-27 · 索引规则</div>
+            <h3><a href="/#news">同名不同厂对照表扩至 4 组，新增 JUFE 段条目</a></h3>
+            <p>新增一组标题相近但前缀不同的条目，逐组标注发行方、年份与数字段区间，便于排除搬运版本。</p>
+          </article>
+          <article class="news-item">
+            <div class="news-meta">2026-10-24 · 补录</div>
+            <h3><a href="/#news">2019 年 STARS 段补入 3 条，画质规格同步标注</a></h3>
+            <p>补入条目均为出道期前后发行，画质标注为早期规格，与 2021 年后同前缀条目分列展示。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="section" id="reco">
+        <div class="section-head">
+          <h2>相关推荐：按具体方向继续找</h2>
+          <p class="sub">标签索引，与精选作品角度区分</p>
+        </div>
+        <div class="reco-index">
+          <a href="/#picks">SSIS 段 2023 年单体</a>
+          <a href="/#picks">MIDE 双人共演结构</a>
+          <a href="/#picks">出道期 STARS 早期条目</a>
+          <a href="/#picks">PRED 剧情长片线</a>
+          <a href="/#picks">VR 视角与播放器要求</a>
+          <a href="/#picks">同名不同厂番号对照</a>
+          <a href="/#picks">JUFE 生活场景企划</a>
+          <a href="/#picks">MIRD 多人分段合集</a>
+        </div>
+      </section>
+
+      <!-- 11 时间线 -->
+      <section class="section" id="timeline">
+        <div class="section-head">
+          <h2>发行时间线：从 2019 到 2023</h2>
+          <p class="sub">按年份看前缀分布变化</p>
+        </div>
+        <div class="timeline">
+          <div class="tl-item">
+            <span>2019</span>
+            <b>STARS 段出道期条目</b>
+            <p>STARS-078 等条目发行，画质为早期规格，镜头距离偏近，企划以场景铺陈为主。</p>
+          </div>
+          <div class="tl-item">
+            <span>2020</span>
+            <b>MIRD 多人合集线成形</b>
+            <p>MIRD-665 发行，出场 5 人、分段短，多人合集的固定结构在这一年稳定下来。</p>
+          </div>
+          <div class="tl-item">
+            <span>2021</span>
+            <b>SSIS 段与 PRED 长片并行</b>
+            <p>SSIS-198 与 PRED-312 同年发行，一条走常规单体、一条走剧情长片，两条线开始分得清楚。</p>
+          </div>
+          <div class="tl-item">
+            <span>2022</span>
+            <b>共演与生活场景两条线</b>
+            <p>MIDE-908 与 JUFE-205 分别代表双人共演与日常场景企划，互动密度与镜头语言差异明显。</p>
+          </div>
+          <div class="tl-item">
+            <span>2023</span>
+            <b>SSIS-421 与 VR 条目</b>
+            <p>SSIS-421 走职场企划，VRSS-102 引入 180 度机位，观看设备要求从此单独标注。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 12 投稿互动 -->
+      <section class="section" id="submit">
+        <div class="submit-panel">
+          <div>
+            <h2>番号补录与纠错投稿</h2>
+            <p>手上有未收录的番号、对不上的版本信息，或者发现条目里的发行方标错了？按「番号 + 发行方 + 年份 + 问题点」的格式提交，核对后会在番号动态里同步修订记录。</p>
+          </div>
+          <a class="btn-primary" href="/#submit">提交补录</a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 右：辅助栏 -->
+    <aside class="aside-col">
+      <div class="aside-card">
+        <h2>本周热度榜</h2>
+        <ol class="rank-list">
+          <li><a href="/#picks">SSIS-421 都市职场企划</a></li>
+          <li><a href="/#picks">MIDE-908 双人共演合集</a></li>
+          <li><a href="/#picks">STARS-078 出道期条目</a></li>
+          <li><a href="/#picks">PRED-312 剧情长片线</a></li>
+          <li><a href="/#picks">SSIS-198 早期 SSIS 段</a></li>
+          <li><a href="/#picks">JUFE-205 生活场景企划</a></li>
+          <li><a href="/#picks">MIRD-665 多人合集</a></li>
+          <li><a href="/#picks">VRSS-102 VR 视角条目</a></li>
+        </ol>
+      </div>
+
+      <div class="aside-card">
+        <h2>前缀速查</h2>
+        <div class="mini-tags">
+          <a href="/#category">SSIS</a>
+          <a href="/#category">STARS</a>
+          <a href="/#category">MIDE</a>
+          <a href="/#category">MIRD</a>
+          <a href="/#category">PRED</a>
+          <a href="/#category">JUFE</a>
+          <a href="/#category">VRSS</a>
+        </div>
+      </div>
+
+      <div class="aside-card">
+        <h2>补录记录</h2>
+        <ul class="rank-list" style="counter-reset:none">
+          <li style="counter-increment:none"><a href="/#updates">11-07 SSIS-421 企划线更正</a></li>
+          <li style="counter-increment:none"><a href="/#updates">11-06 MIDE-908 共演补全</a></li>
+          <li style="counter-increment:none"><a href="/#updates">11-04 VRSS-102 播放标注</a></li>
+          <li style="counter-increment:none"><a href="/#updates">11-01 PRED-312 分段信息</a></li>
+          <li style="counter-increment:none"><a href="/#updates">10-30 MIRD-665 顺序更正</a></li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="logo-text">深田咏美作品番号</span>
+        <p>覆盖 2019 年至 2023 年发行的单体、共演合集、VR 与出道期条目，按番号前缀与年份批次整理，修订记录保留在番号动态里。</p>
+      </div>
+      <div class="footer-col">
+        <h3>番号索引</h3>
+        <ul>
+          <li><a href="/#picks">精选作品</a></li>
+          <li><a href="/#category">分类入口</a></li>
+          <li><a href="/#timeline">发行时间线</a></li>
+          <li><a href="/#reco">相关推荐</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>查证与解析</h3>
+        <ul>
+          <li><a href="/#deep">番号辨析</a></li>
+          <li><a href="/#guide">观看指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>互动</h3>
+        <ul>
+          <li><a href="/#submit">番号补录投稿</a></li>
+          <li><a href="/#comments">观众评论</a></li>
+          <li><a href="/#updates">补录记录</a></li>
+          <li><a href="/#overview">领域概览</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>页面内容为示例条目，番号、年份与发行方信息以各发行方公开资料为准。</span>
+      <span>更新时间：2026-11-07（对应 SSIS-421 企划线更正）</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  /* 移动端菜单 */
+  var hamburger = document.getElementById('hamburger');
+  var nav = document.getElementById('mainNav');
+  var overlay = document.getElementById('navOverlay');
+
+  function closeNav(){
+    nav.classList.remove('open');
+    overlay.classList.remove('show');
+    overlay.hidden = true;
+    hamburger.setAttribute('aria-expanded','false');
+    hamburger.setAttribute('aria-label','打开导航菜单');
+    hamburger.textContent = '☰';
+  }
+  function openNav(){
+    nav.classList.add('open');
+    overlay.classList.add('show');
+    overlay.hidden = false;
+    hamburger.setAttribute('aria-expanded','true');
+    hamburger.setAttribute('aria-label','关闭导航菜单');
+    hamburger.textContent = '✕';
+  }
+  hamburger.addEventListener('click', function(){
+    if(nav.classList.contains('open')) closeNav(); else openNav();
+  });
+  overlay.addEventListener('click', closeNav);
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 860) closeNav();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && nav.classList.contains('open')) closeNav();
+  });
+
+  /* 回到顶部 */
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > window.innerHeight * 0.9) toTop.classList.add('show');
+    else toTop.classList.remove('show');
+    highlightChannel();
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 侧栏高亮 */
+  var channelLinks = Array.prototype.slice.call(document.querySelectorAll('.channel-list a'));
+  var sections = channelLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+  function highlightChannel(){
+    var pos = window.scrollY + 160;
+    var current = 0;
+    sections.forEach(function(sec, i){
+      if(sec && sec.offsetTop <= pos) current = i;
+    });
+    channelLinks.forEach(function(a, i){
+      a.classList.toggle('active', i === current);
+    });
+  }
+  highlightChannel();
+
+  /* 站内搜索 */
+  var searchInput = document.getElementById('siteSearch');
+  var feedback = document.getElementById('searchFeedback');
+  var searchables = Array.prototype.slice.call(
+    document.querySelectorAll('.work-card h3, .work-card .desc, .update-item h3, .update-item p, .news-item h3, .news-item p, .faq-list summary, .cat-item b, .cat-item span')
+  );
+
+  function runSearch(){
+    var q = searchInput.value.trim().toLowerCase();
+    if(!q){
+      feedback.classList.remove('show');
+      feedback.textContent = '';
+      searchables.forEach(function(el){ el.style.background = ''; });
+      return;
+    }
+    var hits = [];
+    searchables.forEach(function(el){
+      var txt = el.textContent.toLowerCase();
+      if(txt.indexOf(q) !== -1){
+        hits.push(el.textContent.trim());
+        el.style.background = '#fff3d6';
+      } else {
+        el.style.background = '';
+      }
+    });
+    feedback.classList.add('show');
+    if(hits.length === 0){
+      feedback.textContent = '没有找到与「' + searchInput.value.trim() + '」相关的条目，试试输入番号前缀（如 SSIS）或类型名。';
+    } else {
+      var preview = hits.slice(0,4).map(function(t){ return '· ' + t.slice(0,28); }).join('<br>');
+      feedback.innerHTML = '找到 ' + hits.length + ' 条相关内容：<br>' + preview + (hits.length > 4 ? '<br>…' : '');
+    }
+  }
+  searchInput.addEventListener('input', runSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ searchInput.value=''; runSearch(); searchInput.blur(); }
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.search-box')) feedback.classList.remove('show');
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"深田咏美作品番号",
+  "description":"按厂牌与发行年份整理的番号索引，覆盖单体作品、共演合集、VR 与出道期条目。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"SSIS-421 和 SSIS-198 是同一部作品的两个版本吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"不是。两条番号分属 2021 年与 2023 年不同发行批次，企划方向也不同，SSIS-198 偏常规单体线，SSIS-421 是职场企划，正片内容不重叠。"}
+    },
+    {
+      "@type":"Question",
+      "name":"MIDE 和 MIRD 开头的番号有什么区别？",
+      "acceptedAnswer":{"@type":"Answer","text":"两个前缀都属 MOODYZ 体系，MIDE 段以双人共演为主，结构固定为三段式；MIRD 段是多人合集，出场人数 3 人以上，单段时长短。"}
+    },
+    {
+      "@type":"Question",
+      "name":"同一番号搜到两种封面，哪一个才是原版？",
+      "acceptedAnswer":{"@type":"Answer","text":"初版与再版的封面不同属常见情况，正片内容一致。判断依据是发行批次，再版通常换主视觉但保留原番号，章节数一致即可视为同一部。"}
+    },
+    {
+      "@type":"Question",
+      "name":"VR 前缀的条目用普通播放器能看吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"能打开但画面会拉伸或只显示局部。VRSS 这类条目是 180 度或 360 度机位，需要头显或支持 360 播放的播放器。"}
+    },
+    {
+      "@type":"Question",
+      "name":"STARS-078 和 STARS-079 是上下集关系吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"不是。两条番号连号但发行月份差两周，企划方向不同，一部偏生活场景、一部偏职场设定。连号只说明发行排期相邻。"}
+    },
+    {
+      "@type":"Question",
+      "name":"2019 年的出道期条目还值得看吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"看目的。画质规格不如 2022 年之后的条目，但表演节奏和镜头距离差异明显，作为前期风格参照有对照价值。"}
+    }
+  ]
+}
+</script>
+</body>
+            </html>
