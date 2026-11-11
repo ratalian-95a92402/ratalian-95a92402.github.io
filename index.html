@@ -1,0 +1,1485 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>成人动漫在线观看 - 深夜档作品与规则解析</title>
+  <meta name="description" content="成人动漫在线观看聚焦深夜档、限制级与同人动画作品聚合。提供新番更新、类型筛选、深度解析与用户评分，适合关注成人向剧情与作画细节的观众参考。">
+  <meta name="keywords" content="成人动漫在线观看">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231b1e2b'/%3E%3Ccircle cx='50' cy='46' r='22' fill='%23e8456a'/%3E%3Ccircle cx='42' cy='42' r='5' fill='%23fff'/%3E%3Ccircle cx='58' cy='42' r='5' fill='%23fff'/%3E%3Cpath d='M38 60 Q50 72 62 60' stroke='%23fff' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    /* ---------- 全局变量 ---------- */
+    :root {
+      --brand: #d63a56;
+      --brand-light: #f0c3cc;
+      --brand-dark: #8f1f33;
+      --bg: #f7f4f2;
+      --panel: #ffffff;
+      --text: #1c1c1e;
+      --text-secondary: #5e5e63;
+      --text-muted: #8e8e93;
+      --divider: #e5dedb;
+      --radius-card: 12px;
+      --radius-btn: 8px;
+      --radius-tag: 4px;
+      --radius-banner: 16px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
+      --shadow-hover: 0 8px 24px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.04);
+      --font: 'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system, sans-serif;
+      --header-height: 64px;
+      --announce-height: 38px;
+      --sticky-offset: calc(var(--header-height) + var(--announce-height) + 12px);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; scroll-padding-top: var(--sticky-offset); }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* ---------- 吸顶公告条 ---------- */
+    .announcement {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #1b1e2b;
+      color: #fff;
+      height: var(--announce-height);
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      font-size: 13px;
+      letter-spacing: 0.2px;
+      gap: 16px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .announcement .brand-tag {
+      color: var(--brand-light);
+      font-weight: 600;
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+
+    .announcement .ticker {
+      display: flex;
+      gap: 32px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .announcement .ticker span {
+      opacity: 0.85;
+    }
+
+    .announcement .ticker b {
+      color: #f7c6d0;
+      font-weight: 500;
+      margin-right: 6px;
+    }
+
+    /* ---------- 吸顶页头 ---------- */
+    .site-header {
+      position: sticky;
+      top: var(--announce-height);
+      z-index: 99;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--divider);
+      height: var(--header-height);
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+    }
+
+    .header-inner {
+      max-width: 1380px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: -0.3px;
+      flex-shrink: 0;
+    }
+
+    .logo-area svg { display: block; }
+
+    .logo-area .logo-text {
+      color: var(--brand);
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .main-nav a {
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background 0.15s, color 0.15s;
+      white-space: nowrap;
+    }
+
+    .main-nav a:hover { background: #f0ebe8; color: var(--text); }
+    .main-nav a:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+
+    .header-actions {
+      margin-left: auto;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .header-actions .btn-icon {
+      background: transparent;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+    }
+
+    .header-actions .btn-icon:hover { border-color: var(--brand); background: #fdf2f5; }
+
+    .search-wrap {
+      display: flex;
+      align-items: center;
+      background: #f2eeeb;
+      border-radius: 20px;
+      padding: 4px 12px;
+      gap: 6px;
+      border: 1px solid transparent;
+      transition: border 0.2s;
+    }
+
+    .search-wrap:focus-within { border-color: var(--brand); background: #fff; }
+
+    .search-wrap input {
+      border: none;
+      background: transparent;
+      font-size: 13px;
+      padding: 4px 0;
+      width: 140px;
+      outline: none;
+      font-family: var(--font);
+      color: var(--text);
+    }
+
+    .search-wrap input::placeholder { color: var(--text-muted); }
+
+    .search-wrap button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-muted);
+      font-size: 14px;
+      padding: 2px;
+      display: flex;
+    }
+
+    /* 移动端菜单按钮 */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--divider);
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 18px;
+      cursor: pointer;
+      color: var(--text);
+    }
+
+    /* ---------- 首屏 ---------- */
+    .hero {
+      max-width: 1380px;
+      margin: 20px auto 0;
+      padding: 0 24px;
+    }
+
+    .hero-panel {
+      background: linear-gradient(135deg, #1b1e2b 0%, #2a1f2d 60%, #3d1f2a 100%);
+      border-radius: var(--radius-banner);
+      padding: 48px 56px;
+      color: #fff;
+      display: grid;
+      grid-template-columns: 1fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-panel::after {
+      content: '';
+      position: absolute;
+      right: -60px;
+      top: -80px;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(214,58,86,0.25) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-content h1 {
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      color: #fff;
+    }
+
+    .hero-content h1 span {
+      color: var(--brand-light);
+    }
+
+    .hero-desc {
+      font-size: 16px;
+      color: rgba(255,255,255,0.78);
+      max-width: 520px;
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--brand);
+      color: #fff;
+      border: none;
+      padding: 10px 26px;
+      border-radius: 40px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-primary:hover { background: var(--brand-dark); transform: translateY(-2px); }
+
+    .btn-ghost {
+      background: transparent;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 10px 24px;
+      border-radius: 40px;
+      font-size: 15px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ---------- 主布局：三栏 ---------- */
+    .page-layout {
+      max-width: 1380px;
+      margin: 28px auto 0;
+      padding: 0 24px 48px;
+      display: grid;
+      grid-template-columns: 178px 1fr 248px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    /* 左频道栏 */
+    .channel-sidebar {
+      position: sticky;
+      top: var(--sticky-offset);
+      background: var(--panel);
+      border-radius: var(--radius-card);
+      padding: 18px 0;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--divider);
+    }
+
+    .channel-sidebar h3 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--text-muted);
+      padding: 0 18px 10px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--divider);
+      margin-bottom: 8px;
+    }
+
+    .channel-sidebar ul {
+      list-style: none;
+    }
+
+    .channel-sidebar li a {
+      display: block;
+      padding: 8px 18px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+      border-left: 3px solid transparent;
+    }
+
+    .channel-sidebar li a:hover,
+    .channel-sidebar li a.active {
+      background: #fdf2f5;
+      color: var(--brand-dark);
+      border-left-color: var(--brand);
+    }
+
+    /* 中主内容 */
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      min-width: 0;
+    }
+
+    /* 右辅助栏 */
+    .secondary-sidebar {
+      position: sticky;
+      top: var(--sticky-offset);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .side-card {
+      background: var(--panel);
+      border-radius: var(--radius-card);
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--divider);
+    }
+
+    .side-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--brand-light);
+      color: var(--text);
+    }
+
+    .side-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .side-list li {
+      font-size: 13px;
+      color: var(--text-secondary);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .side-list li a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .side-list li a:hover { color: var(--brand); }
+
+    .side-list .meta { font-size: 11px; color: var(--text-muted); white-space: nowrap; }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag-cloud a {
+      background: #f2eeeb;
+      color: var(--text-secondary);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      text-decoration: none;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .tag-cloud a:hover { background: var(--brand-light); color: var(--brand-dark); }
+
+    /* ---------- 板块通用 ---------- */
+    .section {
+      background: var(--panel);
+      border-radius: var(--radius-card);
+      padding: 24px 28px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--divider);
+    }
+
+    .section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 18px;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 20px;
+      background: var(--brand);
+      border-radius: 2px;
+    }
+
+    .section h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 18px 0 8px;
+      color: var(--text);
+    }
+
+    .section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      line-height: 1.75;
+    }
+
+    /* 卡片网格 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--bg);
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid var(--divider);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      background: #ddd;
+    }
+
+    .card-body {
+      padding: 12px 14px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+    }
+
+    .card-body .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+      line-height: 1.3;
+    }
+
+    .card-body .card-title:hover { color: var(--brand); }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .card-tags span {
+      background: #f2eeeb;
+      padding: 2px 8px;
+      border-radius: var(--radius-tag);
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .card-desc {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      flex: 1;
+    }
+
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* 紧凑列表 */
+    .compact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .compact-list li {
+      display: flex;
+      gap: 12px;
+      align-items: baseline;
+      font-size: 14px;
+      border-bottom: 1px dashed var(--divider);
+      padding-bottom: 10px;
+    }
+
+    .compact-list li:last-child { border-bottom: none; padding-bottom: 0; }
+
+    .compact-list .list-title {
+      color: var(--text);
+      font-weight: 500;
+      text-decoration: none;
+      flex-shrink: 0;
+      max-width: 50%;
+    }
+
+    .compact-list .list-title:hover { color: var(--brand); }
+
+    .compact-list .list-desc {
+      color: var(--text-secondary);
+      font-size: 13px;
+      line-height: 1.4;
+      flex: 1;
+    }
+
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .category-item {
+      background: #f7f4f2;
+      border-radius: 8px;
+      padding: 14px 12px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 500;
+      border: 1px solid transparent;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .category-item:hover { border-color: var(--brand); background: #fdf2f5; }
+    .category-item .count { display: block; font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+    /* FAQ */
+    details {
+      border-bottom: 1px solid var(--divider);
+      padding: 10px 0;
+    }
+
+    details:last-child { border-bottom: none; }
+
+    summary {
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--text);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 0;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::after {
+      content: '+';
+      font-size: 18px;
+      color: var(--text-muted);
+      transition: transform 0.2s;
+    }
+
+    details[open] summary::after { content: '−'; }
+
+    details .faq-answer {
+      font-size: 14px;
+      color: var(--text-secondary);
+      padding: 8px 0 4px;
+      line-height: 1.7;
+    }
+
+    /* 评论 */
+    .comment-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .comment {
+      display: flex;
+      gap: 12px;
+      background: #faf8f6;
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 13px;
+    }
+
+    .comment .avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      flex-shrink: 0;
+    }
+
+    .comment-body { flex: 1; }
+    .comment-body .nick { font-weight: 600; font-size: 13px; color: var(--text); margin-bottom: 2px; }
+    .comment-body .text { color: var(--text-secondary); line-height: 1.5; }
+
+    /* 资讯列表 */
+    .news-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .news-item {
+      display: flex;
+      gap: 14px;
+    }
+
+    .news-item img {
+      width: 120px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #ddd;
+      flex-shrink: 0;
+    }
+
+    .news-content { flex: 1; }
+    .news-content .news-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .news-content .news-title:hover { color: var(--brand); }
+    .news-content .news-date { font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+    .news-content .news-summary { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+
+    /* 榜单 */
+    .rank-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .rank-list li { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+    .rank-list .rank-num { width: 22px; height: 22px; border-radius: 50%; background: #f2eeeb; color: var(--text-muted); font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .rank-list .rank-num.top { background: var(--brand); color: #fff; }
+    .rank-list .rank-title { flex: 1; color: var(--text); text-decoration: none; font-weight: 500; }
+    .rank-list .rank-title:hover { color: var(--brand); }
+    .rank-list .rank-score { font-size: 12px; color: var(--text-muted); }
+
+    /* 页脚 */
+    .site-footer {
+      background: #1b1e2b;
+      color: rgba(255,255,255,0.7);
+      padding: 40px 24px 28px;
+      margin-top: 20px;
+    }
+
+    .footer-inner {
+      max-width: 1380px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr 1fr;
+      gap: 32px;
+    }
+
+    .footer-brand .logo-text {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .footer-brand p {
+      font-size: 13px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.55);
+      max-width: 300px;
+    }
+
+    .footer-col h4 {
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .footer-col a {
+      display: block;
+      color: rgba(255,255,255,0.55);
+      text-decoration: none;
+      font-size: 13px;
+      padding: 3px 0;
+      transition: color 0.15s;
+    }
+
+    .footer-col a:hover { color: #fff; }
+
+    .footer-bottom {
+      max-width: 1380px;
+      margin: 32px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 12px;
+      color: rgba(255,255,255,0.35);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* 回到顶部 */
+    .back-to-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--brand);
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(214,58,86,0.4);
+      font-size: 20px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 90;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .back-to-top.show { display: flex; }
+    .back-to-top:hover { background: var(--brand-dark); transform: translateY(-2px); }
+
+    /* 搜索无结果 */
+    .no-result {
+      display: none;
+      padding: 24px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .search-active .section { transition: opacity 0.2s; }
+    .search-active .card.hidden, .search-active .compact-list li.hidden, .search-active .news-item.hidden { display: none; }
+
+    /* 移动端遮罩 */
+    .overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      z-index: 98;
+    }
+
+    /* ---------- 响应式 ---------- */
+    @media (max-width: 1200px) {
+      .page-layout { grid-template-columns: 160px 1fr 220px; gap: 20px; }
+    }
+
+    @media (max-width: 1024px) {
+      .page-layout { grid-template-columns: 1fr 240px; }
+      .channel-sidebar { display: none; }
+      .hero-panel { grid-template-columns: 1fr; padding: 36px 32px; }
+      .hero-visual { display: none; }
+      .hero-content h1 { font-size: 34px; }
+    }
+
+    @media (max-width: 740px) {
+      .page-layout { grid-template-columns: 1fr; }
+      .secondary-sidebar { position: static; }
+      .site-header { padding: 0 16px; }
+      .main-nav { display: none; }
+      .menu-toggle { display: block; }
+      .main-nav.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 12px 20px 20px;
+        box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        border-bottom: 1px solid var(--divider);
+        gap: 2px;
+        z-index: 97;
+      }
+      .main-nav.open a { padding: 10px 12px; font-size: 15px; border-radius: 6px; }
+      .overlay.show { display: block; }
+      .hero-panel { padding: 28px 20px; }
+      .hero-content h1 { font-size: 28px; }
+      .hero-desc { font-size: 14px; }
+      .section { padding: 18px 16px; }
+      .card-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-inner { grid-template-columns: 1fr; gap: 24px; }
+      .news-item { flex-direction: column; }
+      .news-item img { width: 100%; height: 160px; }
+      .header-inner { gap: 12px; }
+      .search-wrap input { width: 100px; }
+      .announcement .ticker span:nth-child(3) { display: none; }
+      .back-to-top { bottom: 16px; right: 16px; width: 38px; height: 38px; font-size: 18px; }
+    }
+
+    @media (max-width: 400px) {
+      .hero-content h1 { font-size: 24px; }
+      .card-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+  <!-- 吸顶公告条 -->
+  <div class="announcement" id="announcement">
+    <span class="brand-tag">成人动漫在线观看</span>
+    <div class="ticker">
+      <span><b>11月7日</b>《异世界迷宫黑心企业》第9话更新</span>
+      <span><b>11月6日</b>「暗黑系」专题新增14部作品</span>
+      <span><b>11月5日</b> 同人动画《Salome》分镜稿公开</span>
+    </div>
+  </div>
+
+  <!-- 吸顶页头 -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo-area">
+        <svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true">
+          <rect width="100" height="100" rx="24" fill="#1b1e2b"/>
+          <circle cx="50" cy="46" r="22" fill="#d63a56"/>
+          <circle cx="42" cy="42" r="5" fill="#fff"/>
+          <circle cx="58" cy="42" r="5" fill="#fff"/>
+          <path d="M38 60 Q50 72 62 60" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">成人动漫在线观看</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#featured">精选推荐</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#categories">分类索引</a>
+        <a href="/#deep-dive">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#recommend">相关推荐</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="search-wrap">
+          <input type="search" id="searchInput" placeholder="搜索条目..." aria-label="搜索站内内容">
+          <button id="searchBtn" aria-label="搜索">🔍</button>
+        </div>
+        <a href="/#submit" class="btn-icon">投稿</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="打开菜单" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="hero-panel">
+      <div class="hero-content">
+        <h1>成人动漫在线观看</h1>
+        <p class="hero-desc">汇总深夜档、限制级与独立同人动画作品。按类型、作画风格与剧本完成度归档，提供更新追踪、深度拆解与观众评分，适合需要筛选高信息密度成人向内容的观众。</p>
+        <div class="hero-actions">
+          <a href="/#featured" class="btn-primary">浏览精选 →</a>
+          <a href="/#latest" class="btn-ghost">最新更新</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg width="280" height="220" viewBox="0 0 280 220" fill="none">
+          <rect x="20" y="30" width="240" height="160" rx="16" fill="#2a1f2d" stroke="#d63a56" stroke-width="1.5" opacity="0.6"/>
+          <rect x="40" y="50" width="100" height="70" rx="8" fill="#d63a56" opacity="0.3"/>
+          <rect x="150" y="50" width="80" height="32" rx="6" fill="#f0c3cc" opacity="0.2"/>
+          <rect x="150" y="90" width="80" height="32" rx="6" fill="#f0c3cc" opacity="0.15"/>
+          <rect x="40" y="132" width="190" height="10" rx="5" fill="#f0c3cc" opacity="0.15"/>
+          <rect x="40" y="150" width="120" height="10" rx="5" fill="#f0c3cc" opacity="0.1"/>
+          <circle cx="220" cy="170" r="18" fill="#d63a56" opacity="0.4"/>
+          <path d="M212 170 L218 176 L228 164" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 三栏布局主区域 -->
+  <div class="page-layout">
+
+    <!-- 左频道栏 -->
+    <aside class="channel-sidebar" aria-label="频道索引">
+      <h3>频道索引</h3>
+      <ul>
+        <li><a href="/#overview" class="active">领域概览</a></li>
+        <li><a href="/#featured">精选作品</a></li>
+        <li><a href="/#latest">更新动态</a></li>
+        <li><a href="/#categories">分类筛选</a></li>
+        <li><a href="/#deep-dive">深度解析</a></li>
+        <li><a href="/#guide">观看指南</a></li>
+        <li><a href="/#faq">常见问题</a></li>
+        <li><a href="/#comments">用户评论</a></li>
+        <li><a href="/#news">资讯速递</a></li>
+        <li><a href="/#recommend">相关推荐</a></li>
+        <li><a href="/#ranking">热门榜单</a></li>
+        <li><a href="/#submit">投稿入口</a></li>
+      </ul>
+    </aside>
+
+    <!-- 中主内容 -->
+    <main class="main-content" id="mainContent">
+
+      <!-- 1. 主题领域概览 -->
+      <section class="section" id="overview">
+        <h2>深夜动画与限制级作品生态</h2>
+        <p>成人向动画在制作委员会体系里通常被归入“深夜档”或“R-15/R-18”分级，渠道包括独立配信平台、同人即卖会与限定影院上映。2026年秋季档（10月-11月）正在播出的限制级 TV 动画约 12 部，其中《异世界迷宫黑心企业》第二季、《魔都精兵的奴隶》续篇和《回复术士的重启人生》重制版占据配信平台周榜前三。同人动画领域，C102 后陆续有《Salome》《夜行性动物》等独立作品在 Booth 和 DLsite 上架，单部销量集中在 800-3500 份区间。</p>
+        <p>类型上，异世界转生与复仇题材仍是主流，但 2026 年出现了明显的“慢节奏情感向”分支——《憧憬成为魔法少女》和《终末的后宫》续作都在减少动作场面、增加对话密度。制作层面，限制级作品的平均单集作画张数约 3500-4500 张，比一般 TV 动画低 20% 左右，预算更多倾斜到关键场景的分镜与色彩设计。观众在选择时通常关注三个变量：原作改编忠实度、制作公司过往履历、以及配信平台是否提供无修正版本。</p>
+      </section>
+
+      <!-- 2. 精选内容推荐 -->
+      <section class="section" id="featured">
+        <h2>本季精选作品</h2>
+        <div class="card-grid" id="featuredGrid">
+          <article class="card">
+            <img src="https://picsum.photos/seed/anime_dungeon/400/300" width="400" height="300" loading="lazy" alt="异世界迷宫黑心企业第二季主视觉">
+            <div class="card-body">
+              <a href="/#featured" class="card-title">异世界迷宫黑心企业 第二季</a>
+              <div class="card-tags"><span>异世界</span><span>职场讽刺</span><span>R-15</span></div>
+              <p class="card-desc">二之宫锦司继续在迷宫黑心企业摸爬滚打，第9话揭晓了地下城管理层与魔王军的勾结线。作画在迷宫战斗场景投入明显高于第一季。</p>
+              <div class="card-meta"><span>更新至第9话</span><span>热度 9.4</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/anime_slave/400/300" width="400" height="300" loading="lazy" alt="魔都精兵的奴隶续篇关键帧">
+            <div class="card-body">
+              <a href="/#featured" class="card-title">魔都精兵的奴隶 续篇</a>
+              <div class="card-tags"><span>战斗</span><span>后宫</span><span>R-15</span></div>
+              <p class="card-desc">第6话“温泉篇”单集作画监督换了三人，导致面部特写有轻微风格漂移。但魔防队群像戏的调度比前作更成熟。</p>
+              <div class="card-meta"><span>更新至第6话</span><span>热度 8.9</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/anime_salome/400/300" width="400" height="300" loading="lazy" alt="同人动画Salome分镜稿">
+            <div class="card-body">
+              <a href="/#featured" class="card-title">Salome（同人动画）</a>
+              <div class="card-tags"><span>独立制作</span><span>暗黑童话</span><span>R-18</span></div>
+              <p class="card-desc">导演在 Pixiv 公开了全片分镜稿，22 分钟正片由 4 人团队制作 14 个月完成。镜头语言借鉴了 1970 年代实验动画的叠化手法。</p>
+              <div class="card-meta"><span>2026-11-05 上架</span><span>评分 8.7</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/anime_kaifuku/400/300" width="400" height="300" loading="lazy" alt="回复术士的重启人生重制版截图">
+            <div class="card-body">
+              <a href="/#featured" class="card-title">回复术士的重启人生 重制版</a>
+              <div class="card-tags"><span>复仇</span><span>重制</span><span>R-18</span></div>
+              <p class="card-desc">重制版重新调色并补画了第2话的回忆段落，共增加约 90 秒新镜头。配信平台区分了“剧场版”与“TV放送版”两个版本。</p>
+              <div class="card-meta"><span>全12话已完结</span><span>评分 8.2</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/anime_magical/400/300" width="400" height="300" loading="lazy" alt="憧憬成为魔法少女慢节奏场景">
+            <div class="card-body">
+              <a href="/#featured" class="card-title">憧憬成为魔法少女</a>
+              <div class="card-tags"><span>情感</span><span>反差</span><span>R-15</span></div>
+              <p class="card-desc">第8话用整整一集处理两位主角的冷战与和解，动作戏份压缩到不足 2 分钟。这种反类型处理在观众中评价两极分化。</p>
+              <div class="card-meta"><span>更新至第8话</span><span>热度 8.6</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/anime_nocturnal/400/300" width="400" height="300" loading="lazy" alt="夜行性动物同人动画封面">
+            <div class="card-body">
+              <a href="/#featured" class="card-title">夜行性动物（同人动画）</a>
+              <div class="card-tags"><span>都市</span><span>心理描写</span><span>R-18</span></div>
+              <p class="card-desc">以东京深夜便利店为舞台的 15 分钟短片，用固定机位长镜头表现两名夜班店员的关系变化。DLsite 销量已过 2100 份。</p>
+              <div class="card-meta"><span>2026-10-28 上架</span><span>评分 8.5</span></div>
+            </div>
+          </article>
+        </div>
+        <div class="no-result" id="featuredNoResult">没有匹配的作品，换个关键词试试。</div>
+      </section>
+
+      <!-- 3. 最新更新 / 动态 -->
+      <section class="section" id="latest">
+        <h2>最近更新与播出动态</h2>
+        <ul class="compact-list" id="latestList">
+          <li><a href="/#latest" class="list-title">异世界迷宫黑心企业 第9话</a><span class="list-desc">11月7日 22:00 配信，本话公开了魔王军会计监查的设定，新增角色“黑雾”由杉田智和配音。</span></li>
+          <li><a href="/#latest" class="list-title">魔都精兵的奴隶 第6话</a><span class="list-desc">11月6日 23:30 播出，温泉回。制作组在官方 X 上说明因作画调整延期一天。</span></li>
+          <li><a href="/#latest" class="list-title">Salome 分镜稿公开</a><span class="list-desc">11月5日，导演在 Pixiv 发布 48 页分镜稿，标注了 12 处与正片不同的废弃镜头。</span></li>
+          <li><a href="/#latest" class="list-title">回复术士 重制版 第4话</a><span class="list-desc">11月4日，AT-X 重播版第4话追加了约 20 秒的未公开独白，配信版同步更新。</span></li>
+          <li><a href="/#latest" class="list-title">憧憬成为魔法少女 第8话</a><span class="list-desc">11月3日 24:00 播出，本话分镜由导演本人负责，情绪特写镜头占比达到 65%。</span></li>
+          <li><a href="/#latest" class="list-title">夜行性动物 销量破 2000</a><span class="list-desc">11月2日，作者在 DLsite 页面更新了销量感谢绘，并宣布将在 11月下旬追加 5 分钟 bonus 片段。</span></li>
+          <li><a href="/#latest" class="list-title">C103 同人动画预告</a><span class="list-desc">11月1日，社团“月面步行”发布 30 秒预告，新作《月と水槽》预计 12 月 30 日首发。</span></li>
+          <li><a href="/#latest" class="list-title">魔都精兵 原画集发售</a><span class="list-desc">10月31日，官方原画集《魔都精兵 作画监督修正集》上架，收录 180 张修正原画。</span></li>
+          <li><a href="/#latest" class="list-title">异世界迷宫 配信平台调整</a><span class="list-desc">10月29日，ABEMA 宣布第10话起将提供“导演剪辑版”与“放送版”双版本配信。</span></li>
+          <li><a href="/#latest" class="list-title">憧憬魔法少女 原声带</a><span class="list-desc">10月27日，官方公开 OST 试听，包含 24 首剧伴与 2 首角色歌，11月19日发售。</span></li>
+        </ul>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="section" id="categories">
+        <h2>按类型与分级筛选</h2>
+        <div class="category-grid">
+          <a href="/#categories" class="category-item">异世界转生<span class="count">48部</span></a>
+          <a href="/#categories" class="category-item">复仇/黑化<span class="count">32部</span></a>
+          <a href="/#categories" class="category-item">后宫/恋爱<span class="count">27部</span></a>
+          <a href="/#categories" class="category-item">战斗/奇幻<span class="count">56部</span></a>
+          <a href="/#categories" class="category-item">心理/悬疑<span class="count">19部</span></a>
+          <a href="/#categories" class="category-item">同人/独立<span class="count">41部</span></a>
+          <a href="/#categories" class="category-item">R-15 深夜档<span class="count">23部</span></a>
+          <a href="/#categories" class="category-item">R-18 完全版<span class="count">16部</span></a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析正文 -->
+      <section class="section" id="deep-dive">
+        <h2>限制级动画的作画分级与修正逻辑</h2>
+        <p>讨论成人向动画时，观众常把“尺度”当作唯一变量。实际上，配信平台的版本差异、制作委员会的分级策略、以及原画阶段的修正规则，共同决定了最终看到的内容形态。下面拆解三个容易被忽略的机制。</p>
+
+        <h3>“无修正”标签的三种实际含义</h3>
+        <p>以 2026 年 10 月配信的《回复术士的重启人生 重制版》为例，AT-X 放送版标注“R-18”，但画面仍有 4 处局部遮挡；ABEMA 的“完全版”去掉了其中 3 处，保留 1 处剧情必要的遮挡；而 DLsite 的同人版则完全无遮挡。三种版本在商品页面的描述用词分别是“放送版”“配信限定版”“完全版”，但“完全版”并不等于“无修正”——它只代表该平台能提供的最大尺度。判断标准是看商品页是否单独标注“修正なし”，而不是看“完全”两个字。</p>
+
+        <h3>单集作画张数与关键场景的分配</h3>
+        <p>限制级 TV 动画的单集平均作画张数在 3500-4500 张，比普通深夜档低约 20%。预算的重新分配发生在分镜阶段：制作组会提前标出 2-3 个“重点场景”，把原画张数集中到这些段落。《魔都精兵的奴隶》第6话的温泉场景用了约 600 张原画，占全集 15%，而文戏部分大量使用静止帧与平移。这种分配方式导致观众体感上的“作画崩坏”往往集中在过渡段落，而不是重点场景。判断一部作品作画是否稳定，看第2话和第5话的中间帧密度比看第1话更有效。</p>
+
+        <h3>分级标签与平台审核的错位</h3>
+        <p>日本映画伦理机构（映伦）的分级只针对影院上映和实体光盘，网络配信由平台自行审核。这导致同一部作品在 AT-X 标 R-15，在 FANZA 标 R-18，在动画放题标“一般向”。2026 年 9 月《异世界迷宫黑心企业》第7话在 ABEMA 被临时下架 36 小时，原因是平台审核认为某一幕的暴力表现超出了“深夜档”惯例，而制作委员会认为该幕在分镜阶段已通过内部检查。这类错位通常通过打码或替换镜头解决，但会留下版本差异记录。观众在比对不同平台时，可以先查该作品在“映伦”数据库的登记分级，再核对平台标注，两者不一致时以平台标注为准——因为实际播放权归平台。</p>
+
+        <h3>同人动画的预算与完成度关系</h3>
+        <p>《Salome》的制作预算约 80 万日元，其中 60% 用于作画，20% 用于音乐，10% 用于配音。导演在分镜稿里标注了“这里原本想用 4 张中割但预算只够 2 张”的注释。同人动画的完成度不能只看时长——22 分钟正片里有 3 分钟是静态画加字幕。判断标准是看 staff 表里“动画检查”是否单独设岗，以及片尾是否列出“中割协助”名单。有独立动画检查的作品，中间帧的抖动明显更少。</p>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section class="section" id="guide">
+        <h2>从类型到版本的观看路径</h2>
+        <p>面对同一部作品的多平台多版本，选择顺序可以按以下步骤走。</p>
+        <p><strong>第一步：确认分级。</strong>先查作品在映伦数据库的登记分级。标 R-18 的作品，TV 放送版通常有删减，直接找配信平台的“完全版”更省时间。标 R-15 的作品，多数平台版本差异不大，优先选画质好的。</p>
+        <p><strong>第二步：比对版本差异。</strong>在作品官网或配信平台的“版本情报”页，找“放送版”“配信版”“导演剪辑版”的对照表。没有对照表的，看评论区的版本对比帖——通常开播后 24 小时内会有人列出差异时间点。</p>
+        <p><strong>第三步：判断制作稳定性。</strong>看第2话和第5话的中间帧密度，以及作画监督名单是否频繁更换。单集作画监督超过 3 人的，大概率有赶工段落。</p>
+        <p><strong>第四步：同人动画的筛选。</strong>看 DLsite 或 Booth 页面的 staff 表，优先选有独立“动画检查”岗位的作品。再看作者过往作品的完成度——连续 3 部作品评分在 8.0 以上的社团，新作踩雷概率较低。</p>
+        <p><strong>第五步：配信平台的画质与字幕。</strong>ABEMA 和 FANZA 的码率通常高于免费平台。需要中文字幕的，优先选有官方字幕的配信渠道，机翻字幕在限制级作品里更容易出现术语错误。</p>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="section" id="faq">
+        <h2>常见问题</h2>
+        <details>
+          <summary>《异世界迷宫黑心企业》第二季第9话的“黑雾”是谁配的音？</summary>
+          <div class="faq-answer">黑雾的声优是杉田智和。第9话片尾字幕表里排在第三位，角色设定为魔王军会计监查官，首次登场于本话 12 分 30 秒左右。</div>
+        </details>
+        <details>
+          <summary>《魔都精兵的奴隶》续篇第6话为什么延期一天？</summary>
+          <div class="faq-answer">官方 X 账号在 11月5日 18:00 发布说明，称“因部分镜头作画调整，第6话播出时间从 11月5日 23:30 顺延至 11月6日 23:30”。配信平台同步延期，未影响后续话数排期。</div>
+        </details>
+        <details>
+          <summary>同人动画《Salome》在哪个平台可以买到？</summary>
+          <div class="faq-answer">目前只在 DLsite 和 Booth 上架，DLsite 页面标注“DL版 1,320 日元”，Booth 提供实体同人志捆绑版。两个平台的版本内容一致，但 Booth 版附赠 8 页设定资料。</div>
+        </details>
+        <details>
+          <summary>R-15 和 R-18 在配信平台上的实际区别是什么？</summary>
+          <div class="faq-answer">R-15 作品在配信平台通常直接提供与 TV 放送相同的版本，部分平台会加“年龄确认”弹窗。R-18 作品则区分“放送版”和“完全版”，完全版一般只在 FANZA、DLsite 等专门平台提供，且需要信用卡或年龄认证。</div>
+        </details>
+        <details>
+          <summary>《回复术士的重启人生 重制版》增加了哪些新镜头？</summary>
+          <div class="faq-answer">重制版第2话回忆段落增加了约 90 秒新镜头，主要是主角在村庄生活时期的日常对话。第4话追加了 20 秒独白，配信版与 AT-X 重播版同步。重制版没有改变主线剧情。</div>
+        </details>
+        <details>
+          <summary>如何判断一部限制级动画的作画是否稳定？</summary>
+          <div class="faq-answer">看第2话和第5话的中间帧密度，以及单集作画监督人数。作画监督超过 3 人的集数通常有赶工段落。另外可以查原画集或制作组访谈，了解重点场景的分配计划。</div>
+        </details>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="section" id="comments">
+        <h2>观众评论</h2>
+        <div class="comment-list">
+          <div class="comment"><div class="avatar">A</div><div class="comment-body"><div class="nick">迷宫扫除者</div><div class="text">《异世界迷宫黑心企业》第9话那段会计监查的对话写得太真实了，二之宫被报表逼疯的表情直接笑出声。作画没崩，安心。</div></div></div>
+          <div class="comment"><div class="avatar">B</div><div class="comment-body"><div class="nick">温泉回受害者</div><div class="text">魔都精兵第6话延期一天反而把期待值拉满了，结果温泉场景的实际作画张数感觉不如预告片剪的。面部特写确实有点飘，但整体调度还行。</div></div></div>
+          <div class="comment"><div class="avatar">C</div><div class="comment-body"><div class="nick">Salome二刷</div><div class="text">Salome 的分镜稿和正片对比着看，废弃镜头里有一段女主角在楼梯间的独白，正片删掉后节奏确实更紧。导演取舍有道理。</div></div></div>
+          <div class="comment"><div class="avatar">D</div><div class="comment-body"><div class="nick">回复术士老观众</div><div class="text">重制版加了 90 秒回忆镜头，但我感觉原版那段留白更有冲击力。现在补全了日常反而削弱了后面的复仇反差。</div></div></div>
+          <div class="comment"><div class="avatar">E</div><div class="comment-body"><div class="nick">魔法少女观察员</div><div class="text">第8话整整一集都在处理冷战，动作戏不到 2 分钟。喜欢的人说细腻，不喜欢的人说拖。我属于后者，快进了。</div></div></div>
+          <div class="comment"><div class="avatar">F</div><div class="comment-body"><div class="nick">夜班便利店</div><div class="text">《夜行性动物》那个固定机位长镜头用得真好，15 分钟里两人关系从陌生到熟悉全靠站位和眼神，没一句多余的台词。</div></div></div>
+          <div class="comment"><div class="avatar">G</div><div class="comment-body"><div class="nick">分级纠结中</div><div class="text">ABEMA 和 FANZA 的版本对比表太需要了。之前看《魔都精兵》一直以为两个平台播的是同一版，后来才发现 FANZA 多了两分钟。</div></div></div>
+          <div class="comment"><div class="avatar">H</div><div class="comment-body"><div class="nick">作画警察</div><div class="text">第2话和第5话中间帧密度这个判断方法实用。我去翻了《憧憬成为魔法少女》第5话，确实比第1话稳很多。</div></div></div>
+          <div class="comment"><div class="avatar">I</div><div class="comment-body"><div class="nick">C103备战</div><div class="text">“月面步行”的《月と水槽》预告看了，30 秒里水面反光的处理很讲究。希望正片别像上次那样延期三个月。</div></div></div>
+          <div class="comment"><div class="avatar">J</div><div class="comment-body"><div class="nick">跑题路人</div><div class="text">最近在补老番，发现 2010 年代的 R-18 动画作画普遍比现在扎实，预算都花在刀刃上了。</div></div></div>
+          <div class="comment"><div class="avatar">K</div><div class="comment-body"><div class="nick">原画集收藏癖</div><div class="text">魔都精兵那本作画监督修正集 180 张原画，到手翻了一遍，第3话的修正量最大，几乎重画了半集。</div></div></div>
+          <div class="comment"><div class="avatar">L</div><div class="comment-body"><div class="nick">异世界迷宫会计</div><div class="text">第9话黑雾出场时的配乐用了第一季的变奏主题，杉田智和那个冷笑声一出来就认出来了。</div></div></div>
+          <div class="comment"><div class="avatar">M</div><div class="comment-body"><div class="nick">DLsite常客</div><div class="text">同人动画看 staff 表有没有动画检查是真的准。之前买过一部没列的，中间帧抖得我头晕。</div></div></div>
+          <div class="comment"><div class="avatar">N</div><div class="comment-body"><div class="nick">催更选手</div><div class="text">《憧憬魔法少女》OST 11月19日才发售，还要等十天。</div></div></div>
+          <div class="comment"><div class="avatar">O</div><div class="comment-body"><div class="nick">理性看片</div><div class="text">《回复术士》重制版两个版本都看了，TV 放送版第4话独白被剪掉，配信版有。建议直接看配信版。</div></div></div>
+          <div class="comment"><div class="avatar">P</div><div class="comment-body"><div class="nick">深夜档打卡</div><div class="text">这季度的限制级动画整体质量比去年同期好，至少没有出现大面积崩坏。异世界迷宫和魔都精兵都能看。</div></div></div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="section" id="news">
+        <h2>资讯速递</h2>
+        <ul class="news-list">
+          <li class="news-item">
+            <img src="https://picsum.photos/seed/news_abema/600/400" width="600" height="400" loading="lazy" alt="ABEMA平台界面截图">
+            <div class="news-content">
+              <a href="/#news" class="news-title">ABEMA 为《异世界迷宫黑心企业》第10话增设导演剪辑版</a>
+              <div class="news-date">2026-10-29</div>
+              <p class="news-summary">ABEMA 在 10月29日更新配信页面，宣布第10话起提供“导演剪辑版”与“放送版”双版本，导演剪辑版每话多出约 90 秒未放送片段，涵盖迷宫内的日常对话。</p>
+            </div>
+          </li>
+          <li class="news-item">
+            <img src="https://picsum.photos/seed/news_salome/600/400" width="600" height="400" loading="lazy" alt="Salome分镜稿页面截图">
+            <div class="news-content">
+              <a href="/#news" class="news-title">同人动画《Salome》导演公开 48 页分镜稿，标注 12 处废弃镜头</a>
+              <div class="news-date">2026-11-05</div>
+              <p class="news-summary">导演在 Pixiv 发布的分镜稿中，用红字标注了正片未采用的 12 处镜头，其中 3 处因预算不足改为静态画。分镜稿末尾附有制作时间表，显示正片制作周期为 14 个月。</p>
+            </div>
+          </li>
+          <li class="news-item">
+            <img src="https://picsum.photos/seed/news_dlsite/600/400" width="600" height="400" loading="lazy" alt="DLsite销售页面截图">
+            <div class="news-content">
+              <a href="/#news" class="news-title">《夜行性动物》DLsite 销量突破 2100 份，将追加 5 分钟片段</a>
+              <div class="news-date">2026-11-02</div>
+              <p class="news-summary">作者在 DLsite 页面更新感谢绘，并宣布 11月下旬追加 5 分钟 bonus 片段，内容为便利店打烊后的两人对话。已购买用户可免费更新。</p>
+            </div>
+          </li>
+          <li class="news-item">
+            <img src="https://picsum.photos/seed/news_c103/600/400" width="600" height="400" loading="lazy" alt="C103同人动画预告截图">
+            <div class="news-content">
+              <a href="/#news" class="news-title">社团“月面步行”发布 C103 新作《月と水槽》30 秒预告</a>
+              <div class="news-date">2026-11-01</div>
+              <p class="news-summary">预告片展示了水面反光的作画细节，正片预计 12月30日首发，定价 1,500 日元。社团上一部作品《水底の街》曾因制作延期三个月。</p>
+            </div>
+          </li>
+          <li class="news-item">
+            <img src="https://picsum.photos/seed/news_ost/600/400" width="600" height="400" loading="lazy" alt="憧憬成为魔法少女OST封面">
+            <div class="news-content">
+              <a href="/#news" class="news-title">《憧憬成为魔法少女》OST 试听公开，收录 24 首剧伴与 2 首角色歌</a>
+              <div class="news-date">2026-10-27</div>
+              <p class="news-summary">官方在 10月27日公开 OST 试听片段，包含第8话冷战场景的钢琴曲。原声带定于 11月19日发售，初回盘附赠导演评论音轨。</p>
+            </div>
+          </li>
+          <li class="news-item">
+            <img src="https://picsum.photos/seed/news_artbook/600/400" width="600" height="400" loading="lazy" alt="魔都精兵原画集封面">
+            <div class="news-content">
+              <a href="/#news" class="news-title">《魔都精兵的奴隶》作画监督修正集发售，收录 180 张原画</a>
+              <div class="news-date">2026-10-31</div>
+              <p class="news-summary">修正集按话数排列，第3话的修正量最大，几乎重画了半集。书中附有作画监督访谈，提到第6话温泉场景的原画张数分配问题。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="section" id="recommend">
+        <h2>相关方向与条目</h2>
+        <div class="tag-cloud">
+          <a href="/#recommend">异世界迷宫黑心企业 原作小说</a>
+          <a href="/#recommend">魔都精兵 漫画第18卷</a>
+          <a href="/#recommend">回复术士 分镜集</a>
+          <a href="/#recommend">同人动画制作入门</a>
+          <a href="/#recommend">深夜档 R-15 片单</a>
+          <a href="/#recommend">无修正版本对照表</a>
+          <a href="/#recommend">C103 同人动画新作</a>
+          <a href="/#recommend">作画监督修正集推荐</a>
+        </div>
+      </section>
+
+      <!-- 11. 补充板块：热门榜单 + 投稿 -->
+      <section class="section" id="ranking">
+        <h2>本周热度榜</h2>
+        <ul class="rank-list">
+          <li><span class="rank-num top">1</span><a href="/#ranking" class="rank-title">异世界迷宫黑心企业 第二季</a><span class="rank-score">9.4</span></li>
+          <li><span class="rank-num top">2</span><a href="/#ranking" class="rank-title">魔都精兵的奴隶 续篇</a><span class="rank-score">8.9</span></li>
+          <li><span class="rank-num top">3</span><a href="/#ranking" class="rank-title">Salome（同人动画）</a><span class="rank-score">8.7</span></li>
+          <li><span class="rank-num">4</span><a href="/#ranking" class="rank-title">憧憬成为魔法少女</a><span class="rank-score">8.6</span></li>
+          <li><span class="rank-num">5</span><a href="/#ranking" class="rank-title">夜行性动物（同人动画）</a><span class="rank-score">8.5</span></li>
+          <li><span class="rank-num">6</span><a href="/#ranking" class="rank-title">回复术士的重启人生 重制版</a><span class="rank-score">8.2</span></li>
+        </ul>
+      </section>
+
+      <section class="section" id="submit">
+        <h2>投稿与互动</h2>
+        <p>如果你整理了某部作品的版本差异对比、或是同人动画的 staff 表分析，欢迎投稿。格式不限，附上具体时间戳和来源即可。每周会挑选 2-3 篇整理进「深度解析」的补充笔记。</p>
+        <p style="font-size:13px;color:var(--text-muted);">投稿邮箱：submit@example.com（示例地址，仅作占位）</p>
+      </section>
+
+    </main>
+
+    <!-- 右辅助栏 -->
+    <aside class="secondary-sidebar" aria-label="辅助信息">
+      <div class="side-card">
+        <h3>本周更新速览</h3>
+        <ul class="side-list">
+          <li><a href="/#latest">异世界迷宫 第9话</a><span class="meta">11-07</span></li>
+          <li><a href="/#latest">魔都精兵 第6话</a><span class="meta">11-06</span></li>
+          <li><a href="/#latest">Salome 分镜稿</a><span class="meta">11-05</span></li>
+          <li><a href="/#latest">回复术士 第4话</a><span class="meta">11-04</span></li>
+          <li><a href="/#latest">憧憬魔法少女 第8话</a><span class="meta">11-03</span></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>热门标签</h3>
+        <div class="tag-cloud">
+          <a href="/#categories">异世界</a>
+          <a href="/#categories">复仇</a>
+          <a href="/#categories">同人动画</a>
+          <a href="/#categories">R-18</a>
+          <a href="/#categories">深夜档</a>
+          <a href="/#categories">作画监督</a>
+          <a href="/#categories">无修正</a>
+          <a href="/#categories">C103</a>
+        </div>
+      </div>
+      <div class="side-card">
+        <h3>版本差异速查</h3>
+        <ul class="side-list">
+          <li><a href="/#deep-dive">放送版 vs 配信版</a><span class="meta">4部</span></li>
+          <li><a href="/#deep-dive">完全版标注对照</a><span class="meta">6部</span></li>
+          <li><a href="/#deep-dive">导演剪辑版新增</a><span class="meta">3部</span></li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">成人动漫在线观看</span>
+        <p>覆盖 2026 年秋季档深夜动画与独立同人作品，追踪更新、版本差异与作画细节。内容按周更新，条目类型包括 TV 动画、同人短片、原画集与配信版本对照。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容分区</h4>
+        <a href="/#overview">领域概览</a>
+        <a href="/#featured">精选作品</a>
+        <a href="/#latest">更新动态</a>
+        <a href="/#categories">分类索引</a>
+        <a href="/#deep-dive">深度解析</a>
+      </div>
+      <div class="footer-col">
+        <h4>互动</h4>
+        <a href="/#comments">用户评论</a>
+        <a href="/#submit">投稿入口</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#ranking">热门榜单</a>
+      </div>
+      <div class="footer-col">
+        <h4>资讯与推荐</h4>
+        <a href="/#news">资讯速递</a>
+        <a href="/#recommend">相关推荐</a>
+        <a href="/#guide">观看指南</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 成人动漫在线观看 · 内容聚合示例站</span>
+      <span>信息以实际配信平台为准 · 页面更新于 2026-11-08</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+  <script>
+    (function() {
+      // 移动端菜单
+      const menuToggle = document.getElementById('menuToggle');
+      const mainNav = document.getElementById('mainNav');
+      const overlay = document.getElementById('overlay');
+
+      function closeMenu() {
+        mainNav.classList.remove('open');
+        overlay.classList.remove('show');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+
+      menuToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const isOpen = mainNav.classList.toggle('open');
+        overlay.classList.toggle('show', isOpen);
+        menuToggle.setAttribute('aria-expanded', isOpen);
+      });
+
+      overlay.addEventListener('click', closeMenu);
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mainNav.classList.contains('open')) {
+          closeMenu();
+        }
+      });
+
+      // 点击导航后收起
+      mainNav.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          if (window.innerWidth <= 740) closeMenu();
+        });
+      });
+
+      // 回到顶部
+      const backToTop = document.getElementById('backToTop');
+      window.addEventListener('scroll', function() {
+        backToTop.classList.toggle('show', window.scrollY > window.innerHeight);
+      });
+      backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // 搜索功能
+      const searchInput = document.getElementById('searchInput');
+      const searchBtn = document.getElementById('searchBtn');
+      const featuredGrid = document.getElementById('featuredGrid');
+      const featuredNoResult = document.getElementById('featuredNoResult');
+      const latestList = document.getElementById('latestList');
+
+      function doSearch() {
+        const q = searchInput.value.trim().toLowerCase();
+        const cards = featuredGrid.querySelectorAll('.card');
+        const listItems = latestList.querySelectorAll('li');
+        let anyMatch = false;
+
+        cards.forEach(function(card) {
+          const text = card.textContent.toLowerCase();
+          const match = !q || text.includes(q);
+          card.classList.toggle('hidden', !match);
+          if (match && q) anyMatch = true;
+        });
+
+        listItems.forEach(function(li) {
+          const text = li.textContent.toLowerCase();
+          const match = !q || text.includes(q);
+          li.classList.toggle('hidden', !match);
+          if (match && q) anyMatch = true;
+        });
+
+        if (q) {
+          featuredNoResult.style.display = anyMatch ? 'none' : 'block';
+          document.body.classList.add('search-active');
+        } else {
+          featuredNoResult.style.display = 'none';
+          document.body.classList.remove('search-active');
+        }
+      }
+
+      searchBtn.addEventListener('click', doSearch);
+      searchInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') doSearch();
+      });
+      searchInput.addEventListener('input', function() {
+        if (searchInput.value.trim() === '') doSearch();
+      });
+
+      // 侧栏高亮（简单实现）
+      const sideLinks = document.querySelectorAll('.channel-sidebar a');
+      const sections = document.querySelectorAll('.section[id]');
+      window.addEventListener('scroll', function() {
+        let current = '';
+        sections.forEach(function(sec) {
+          const rect = sec.getBoundingClientRect();
+          if (rect.top <= 120) current = sec.id;
+        });
+        sideLinks.forEach(function(link) {
+          link.classList.toggle('active', link.getAttribute('href') === '/#' + current);
+        });
+      });
+
+      // 平滑滚动（原生 scroll-behavior 已启用，这里做一次兜底）
+      document.querySelectorAll('a[href^="/#"]').forEach(function(anchor) {
+        anchor.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href').slice(2);
+          const target = document.getElementById(targetId);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            history.pushState(null, '', this.getAttribute('href'));
+          }
+        });
+      });
+
+    })();
+  </script>
+</body>
+                                                                                  </html>
