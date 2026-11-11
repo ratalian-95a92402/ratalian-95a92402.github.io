@@ -1,0 +1,2522 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>抖音意外闪现走光合集 - 热门片段与合集索引</title>
+<meta name="description" content="抖音意外闪现走光合集：收录2026年10月以来的意外走光片段、主播失误瞬间与路人抓拍合集。包含衣领滑落、裙摆意外、镜头错位等具体类型，适合喜欢猎奇与现场感的观众查阅。">
+<meta name="keywords" content="抖音意外闪现走光合集">
+<style>
+:root{
+  --primary:#d62c5a;
+  --primary-light:#fde8ee;
+  --primary-dark:#a81e42;
+  --bg:#fefcfd;
+  --panel:#ffffff;
+  --text:#1f1b1e;
+  --text-2:#5e565b;
+  --text-3:#8f858a;
+  --line:#efe6ea;
+  --line-2:#e3d6dc;
+  --radius-card:14px;
+  --radius-btn:8px;
+  --radius-tag:20px;
+  --shadow-sm:0 1px 4px rgba(30,10,20,.04);
+  --shadow-md:0 6px 18px rgba(30,10,20,.07);
+  --shadow-lg:0 12px 32px rgba(30,10,20,.10);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  --head-h:58px;
+  --notice-h:40px;
+  --sticky-offset:calc(var(--head-h) + var(--notice-h));
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--sticky-offset) + 12px);}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+  font-size:15px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img{display:block;max-width:100%;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+ul{list-style:none;}
+
+/* ===== 吸顶公告条 ===== */
+.notice-bar{
+  position:sticky;
+  top:0;
+  z-index:60;
+  height:var(--notice-h);
+  background:linear-gradient(90deg,#2b141c,#4a1e2e);
+  color:#f7e9ee;
+  display:flex;
+  align-items:center;
+  font-size:12.5px;
+  overflow:hidden;
+}
+.notice-inner{
+  max-width:1360px;
+  margin:0 auto;
+  padding:0 20px;
+  width:100%;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  white-space:nowrap;
+}
+.notice-brand{
+  font-weight:700;
+  color:#ffb3c6;
+  letter-spacing:.5px;
+  flex-shrink:0;
+  font-size:12px;
+}
+.notice-items{
+  display:flex;
+  gap:28px;
+  overflow-x:auto;
+  scrollbar-width:none;
+}
+.notice-items::-webkit-scrollbar{display:none;}
+.notice-items span{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  flex-shrink:0;
+}
+.notice-items .dot{
+  width:5px;height:5px;border-radius:50%;
+  background:#ff7a9c;flex-shrink:0;
+}
+.notice-items b{color:#ffd9e2;font-weight:600;}
+
+/* ===== 页头 ===== */
+.site-header{
+  position:sticky;
+  top:var(--notice-h);
+  z-index:55;
+  height:var(--head-h);
+  background:rgba(254,252,253,.88);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:1360px;
+  margin:0 auto;
+  padding:0 20px;
+  height:100%;
+  display:flex;
+  align-items:center;
+  gap:22px;
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  flex-shrink:0;
+}
+.logo svg{width:32px;height:32px;flex-shrink:0;}
+.logo-text{
+  font-size:17px;
+  font-weight:800;
+  color:var(--primary-dark);
+  letter-spacing:.3px;
+  white-space:nowrap;
+}
+.main-nav{
+  display:flex;
+  gap:4px;
+  overflow-x:auto;
+  scrollbar-width:none;
+  flex:1;
+}
+.main-nav::-webkit-scrollbar{display:none;}
+.main-nav a{
+  padding:6px 12px;
+  border-radius:8px;
+  font-size:13.5px;
+  color:var(--text-2);
+  white-space:nowrap;
+  font-weight:500;
+  transition:background .18s,color .18s;
+}
+.main-nav a:hover,.main-nav a.active{
+  background:var(--primary-light);
+  color:var(--primary-dark);
+}
+.header-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-shrink:0;
+}
+.search-box{
+  display:flex;
+  align-items:center;
+  background:#f5eff2;
+  border:1px solid var(--line-2);
+  border-radius:8px;
+  height:34px;
+  padding:0 4px 0 10px;
+  width:210px;
+  transition:border-color .2s;
+}
+.search-box:focus-within{border-color:var(--primary);}
+.search-box input{
+  border:none;
+  background:transparent;
+  outline:none;
+  font-size:13px;
+  width:100%;
+  color:var(--text);
+}
+.search-box input::placeholder{color:var(--text-3);}
+.search-box button{
+  width:26px;height:26px;
+  border-radius:6px;
+  background:var(--primary);
+  color:#fff;
+  display:grid;
+  place-items:center;
+  flex-shrink:0;
+}
+.search-box svg{width:13px;height:13px;}
+.btn-ghost{
+  font-size:13px;
+  padding:6px 14px;
+  border-radius:8px;
+  border:1px solid var(--line-2);
+  color:var(--text-2);
+  white-space:nowrap;
+  transition:border-color .2s,color .2s;
+}
+.btn-ghost:hover{border-color:var(--primary);color:var(--primary-dark);}
+.hamburger{display:none;width:36px;height:36px;border-radius:8px;color:var(--text-2);align-items:center;justify-content:center;}
+.hamburger svg{width:22px;height:22px;}
+
+/* 移动端菜单 */
+.mobile-menu-overlay{
+  position:fixed;inset:0;background:rgba(20,10,14,.45);
+  z-index:70;display:none;opacity:0;transition:opacity .22s;
+}
+.mobile-menu-overlay.show{display:block;opacity:1;}
+.mobile-menu{
+  position:fixed;top:0;right:0;bottom:0;
+  width:280px;max-width:80vw;
+  background:#fff;
+  z-index:75;
+  transform:translateX(100%);
+  transition:transform .24s ease;
+  padding:20px 16px;
+  overflow-y:auto;
+  box-shadow:-8px 0 30px rgba(0,0,0,.12);
+}
+.mobile-menu.show{transform:translateX(0);}
+.mobile-menu h4{font-size:13px;color:var(--text-3);margin:16px 0 8px;font-weight:600;letter-spacing:.5px;}
+.mobile-menu a{display:block;padding:10px 8px;border-radius:8px;font-size:14.5px;color:var(--text-2);}
+.mobile-menu a:hover{background:var(--primary-light);color:var(--primary-dark);}
+.mobile-menu .close-btn{
+  position:absolute;top:14px;right:14px;
+  width:32px;height:32px;border-radius:8px;
+  display:grid;place-items:center;
+  background:#f5eff2;color:var(--text-2);
+}
+.mobile-menu .close-btn svg{width:16px;height:16px;}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;
+  background:
+    radial-gradient(ellipse 70% 90% at 82% 18%,rgba(214,44,90,.11),transparent 60%),
+    radial-gradient(ellipse 60% 70% at 12% 82%,rgba(180,60,110,.07),transparent 65%),
+    linear-gradient(165deg,#fff8fa 0%,#fefcfd 55%,#fff3f6 100%);
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+.hero-inner{
+  max-width:1360px;
+  margin:0 auto;
+  padding:52px 20px 44px;
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:40px;
+  align-items:center;
+}
+.hero-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-size:12px;
+  font-weight:600;
+  color:var(--primary-dark);
+  background:var(--primary-light);
+  padding:4px 12px;
+  border-radius:var(--radius-tag);
+  margin-bottom:16px;
+  letter-spacing:.3px;
+}
+.hero-badge .pulse{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--primary);
+  animation:pulse 1.8s infinite;
+}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+.hero h1{
+  font-size:clamp(1.65rem,3.2vw,2.55rem);
+  line-height:1.28;
+  font-weight:800;
+  letter-spacing:-.3px;
+  color:var(--text);
+  margin-bottom:14px;
+}
+.hero h1 em{
+  font-style:normal;
+  color:var(--primary-dark);
+  position:relative;
+  white-space:nowrap;
+}
+.hero h1 em::after{
+  content:"";
+  position:absolute;left:0;right:0;bottom:2px;
+  height:8px;background:rgba(214,44,90,.16);
+  border-radius:2px;z-index:-1;
+}
+.hero-desc{
+  font-size:14.5px;
+  color:var(--text-2);
+  max-width:520px;
+  margin-bottom:24px;
+  line-height:1.75;
+}
+.hero-desc b{color:var(--text);font-weight:600;}
+.hero-actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.btn-primary{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:var(--primary);
+  color:#fff;
+  padding:11px 22px;
+  border-radius:var(--radius-btn);
+  font-size:14px;
+  font-weight:600;
+  transition:background .2s,transform .2s,box-shadow .2s;
+  box-shadow:0 3px 12px rgba(214,44,90,.22);
+}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px);box-shadow:0 6px 18px rgba(214,44,90,.3);}
+.btn-primary svg{width:16px;height:16px;}
+.btn-text-link{
+  font-size:14px;
+  color:var(--text-2);
+  padding:11px 6px;
+  font-weight:500;
+  border-bottom:1.5px solid transparent;
+  transition:color .2s,border-color .2s;
+}
+.btn-text-link:hover{color:var(--primary-dark);border-color:var(--primary);}
+.hero-stats{
+  display:flex;
+  gap:28px;
+  margin-top:32px;
+  flex-wrap:wrap;
+}
+.hero-stat strong{
+  display:block;
+  font-size:1.5rem;
+  font-weight:800;
+  color:var(--primary-dark);
+  line-height:1.2;
+}
+.hero-stat span{
+  font-size:12px;
+  color:var(--text-3);
+  letter-spacing:.2px;
+}
+
+/* 首屏视觉 */
+.hero-visual{
+  position:relative;
+  min-height:280px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.hero-visual svg{width:100%;height:auto;max-width:460px;}
+.hero-float-card{
+  position:absolute;
+  background:#fff;
+  border-radius:12px;
+  box-shadow:var(--shadow-lg);
+  padding:10px 14px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:12.5px;
+  border:1px solid var(--line);
+  animation:floaty 5s ease-in-out infinite;
+}
+.hero-float-card .mini-thumb{
+  width:38px;height:38px;border-radius:8px;
+  background:linear-gradient(135deg,#f8b8c8,#e8607e);
+  display:grid;place-items:center;
+  color:#fff;font-weight:700;font-size:12px;
+  flex-shrink:0;
+}
+.hero-float-card b{display:block;font-size:13px;color:var(--text);line-height:1.3;}
+.hero-float-card small{color:var(--text-3);font-size:11px;}
+.float-1{top:6%;left:-4%;animation-delay:0s;}
+.float-2{bottom:10%;right:-2%;animation-delay:1.6s;}
+.float-3{top:44%;right:6%;animation-delay:.8s;}
+@keyframes floaty{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+@media(prefers-reduced-motion:reduce){
+  .hero-float-card,.hero-badge .pulse{animation:none;}
+  html{scroll-behavior:auto;}
+}
+
+/* ===== 主布局：三栏 ===== */
+.layout{
+  max-width:1360px;
+  margin:0 auto;
+  padding:36px 20px 72px;
+  display:grid;
+  grid-template-columns:175px minmax(0,1fr) 250px;
+  gap:32px;
+  align-items:start;
+}
+/* 左频道索引 */
+.channel-index{
+  position:sticky;
+  top:calc(var(--sticky-offset) + 20px);
+  align-self:start;
+}
+.channel-index h3{
+  font-size:11.5px;
+  color:var(--text-3);
+  letter-spacing:1.2px;
+  font-weight:600;
+  margin-bottom:12px;
+  padding-left:10px;
+}
+.channel-index ul{display:flex;flex-direction:column;gap:2px;}
+.channel-index a{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:8px;
+  font-size:13.5px;
+  color:var(--text-2);
+  font-weight:500;
+  transition:background .16s,color .16s;
+  border-left:2.5px solid transparent;
+}
+.channel-index a .ch-dot{width:5px;height:5px;border-radius:50%;background:var(--line-2);flex-shrink:0;transition:background .16s;}
+.channel-index a:hover{background:var(--primary-light);color:var(--primary-dark);}
+.channel-index a.active{
+  background:var(--primary-light);
+  color:var(--primary-dark);
+  border-left-color:var(--primary);
+  font-weight:600;
+}
+.channel-index a.active .ch-dot{background:var(--primary);}
+.channel-index .ch-divider{height:1px;background:var(--line);margin:10px 8px;}
+
+/* 主内容 */
+.main-col{min-width:0;}
+/* 右辅助栏 */
+.side-col{
+  position:sticky;
+  top:calc(var(--sticky-offset) + 20px);
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+.side-card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius-card);
+  padding:18px;
+  box-shadow:var(--shadow-sm);
+}
+.side-card h3{
+  font-size:14px;
+  font-weight:700;
+  margin-bottom:14px;
+  display:flex;
+  align-items:center;
+  gap:7px;
+  color:var(--text);
+}
+.side-card h3 svg{width:15px;height:15px;color:var(--primary);}
+.side-card .side-more{
+  display:block;
+  text-align:center;
+  font-size:12px;
+  color:var(--primary-dark);
+  padding-top:12px;
+  border-top:1px dashed var(--line-2);
+  margin-top:12px;
+  font-weight:500;
+}
+.side-card .side-more:hover{text-decoration:underline;}
+
+/* 热榜条目 */
+.rank-list li{
+  display:flex;
+  gap:10px;
+  padding:8px 0;
+  border-bottom:1px dashed var(--line);
+  align-items:flex-start;
+}
+.rank-list li:last-child{border-bottom:none;}
+.rank-list .rank-num{
+  font-size:12px;
+  font-weight:800;
+  color:var(--text-3);
+  width:18px;
+  flex-shrink:0;
+  text-align:center;
+  line-height:1.5;
+}
+.rank-list li:nth-child(1) .rank-num{color:#d62c5a;}
+.rank-list li:nth-child(2) .rank-num{color:#e8607e;}
+.rank-list li:nth-child(3) .rank-num{color:#f08a9e;}
+.rank-list .rank-title{
+  font-size:13px;
+  color:var(--text);
+  line-height:1.45;
+  font-weight:500;
+}
+.rank-list .rank-title:hover{color:var(--primary-dark);}
+.rank-list .rank-meta{
+  font-size:11px;
+  color:var(--text-3);
+  margin-top:2px;
+}
+
+/* 更新流 */
+.update-stream li{
+  padding:9px 0;
+  border-bottom:1px dashed var(--line);
+}
+.update-stream li:last-child{border-bottom:none;}
+.update-stream time{
+  font-size:11px;
+  color:var(--text-3);
+  display:block;
+  margin-bottom:2px;
+  letter-spacing:.2px;
+}
+.update-stream .up-title{
+  font-size:13px;
+  color:var(--text);
+  line-height:1.45;
+  font-weight:500;
+}
+.update-stream .up-title:hover{color:var(--primary-dark);}
+
+/* ===== 通用板块 ===== */
+.section{
+  margin-bottom:44px;
+  scroll-margin-top:calc(var(--sticky-offset) + 14px);
+}
+.section:last-child{margin-bottom:0;}
+.section-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:16px;
+  margin-bottom:18px;
+  flex-wrap:wrap;
+}
+.section-head h2{
+  font-size:1.22rem;
+  font-weight:800;
+  letter-spacing:-.2px;
+  color:var(--text);
+  display:flex;
+  align-items:center;
+  gap:9px;
+}
+.section-head h2::before{
+  content:"";
+  width:4px;height:18px;
+  background:linear-gradient(180deg,var(--primary),#f27a96);
+  border-radius:3px;
+  flex-shrink:0;
+}
+.section-head .head-note{
+  font-size:12.5px;
+  color:var(--text-3);
+}
+.section-head .head-link{
+  font-size:12.5px;
+  color:var(--primary-dark);
+  font-weight:500;
+  white-space:nowrap;
+}
+.section-head .head-link:hover{text-decoration:underline;}
+
+/* 领域概览 */
+.overview-box{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius-card);
+  padding:24px 26px;
+  box-shadow:var(--shadow-sm);
+  font-size:14.5px;
+  color:var(--text-2);
+  line-height:1.85;
+}
+.overview-box p+p{margin-top:12px;}
+.overview-box b{color:var(--text);font-weight:600;}
+.overview-box .tag-inline{
+  display:inline-block;
+  background:var(--primary-light);
+  color:var(--primary-dark);
+  font-size:12px;
+  font-weight:600;
+  padding:1px 8px;
+  border-radius:4px;
+  margin:0 2px;
+}
+
+/* 精选卡片网格 */
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+.content-card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius-card);
+  overflow:hidden;
+  box-shadow:var(--shadow-sm);
+  transition:transform .2s,box-shadow .2s,border-color .2s;
+  display:flex;
+  flex-direction:column;
+}
+.content-card:hover{
+  transform:translateY(-3px);
+  box-shadow:var(--shadow-md);
+  border-color:var(--line-2);
+}
+.card-thumb{
+  position:relative;
+  aspect-ratio:4/3;
+  overflow:hidden;
+  background:#f5eff2;
+}
+.card-thumb img{
+  width:100%;height:100%;
+  object-fit:cover;
+  transition:transform .35s;
+}
+.content-card:hover .card-thumb img{transform:scale(1.04);}
+.card-badge{
+  position:absolute;
+  top:9px;left:9px;
+  font-size:10.5px;
+  font-weight:700;
+  padding:2px 8px;
+  border-radius:5px;
+  background:rgba(255,255,255,.92);
+  color:var(--primary-dark);
+  letter-spacing:.3px;
+  backdrop-filter:blur(4px);
+}
+.card-body{
+  padding:12px 14px 14px;
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+  flex:1;
+}
+.card-title{
+  font-size:14px;
+  font-weight:700;
+  line-height:1.4;
+  color:var(--text);
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.card-title:hover{color:var(--primary-dark);}
+.card-tags{
+  display:flex;
+  gap:5px;
+  flex-wrap:wrap;
+}
+.card-tags span{
+  font-size:10.5px;
+  color:var(--text-3);
+  background:#f7f2f4;
+  padding:1px 7px;
+  border-radius:4px;
+  line-height:1.6;
+}
+.card-desc{
+  font-size:12.5px;
+  color:var(--text-2);
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.card-footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:auto;
+  padding-top:8px;
+  border-top:1px solid var(--line);
+  font-size:11.5px;
+  color:var(--text-3);
+}
+.card-footer .heat{color:var(--primary-dark);font-weight:600;}
+
+/* 最新更新列表 */
+.update-list{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius-card);
+  padding:4px 20px;
+  box-shadow:var(--shadow-sm);
+}
+.update-item{
+  display:flex;
+  gap:16px;
+  padding:13px 0;
+  border-bottom:1px solid var(--line);
+  align-items:flex-start;
+}
+.update-item:last-child{border-bottom:none;}
+.update-item time{
+  font-size:11.5px;
+  color:var(--text-3);
+  width:64px;
+  flex-shrink:0;
+  padding-top:2px;
+  letter-spacing:.2px;
+}
+.update-item .up-content{flex:1;min-width:0;}
+.update-item .up-content a{
+  font-size:14px;
+  font-weight:600;
+  color:var(--text);
+  display:block;
+  margin-bottom:2px;
+}
+.update-item .up-content a:hover{color:var(--primary-dark);}
+.update-item .up-content p{
+  font-size:12.5px;
+  color:var(--text-2);
+  line-height:1.55;
+}
+.update-item .up-type{
+  font-size:10.5px;
+  color:var(--primary-dark);
+  background:var(--primary-light);
+  padding:1px 7px;
+  border-radius:4px;
+  flex-shrink:0;
+  align-self:center;
+  font-weight:600;
+}
+
+/* 分类入口 */
+.cat-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+}
+.cat-item{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:16px 14px;
+  text-align:center;
+  transition:border-color .2s,background .2s,transform .2s;
+  box-shadow:var(--shadow-sm);
+}
+.cat-item:hover{
+  border-color:var(--primary);
+  background:#fffafb;
+  transform:translateY(-2px);
+}
+.cat-item .cat-icon{
+  width:36px;height:36px;
+  margin:0 auto 8px;
+  border-radius:9px;
+  background:var(--primary-light);
+  color:var(--primary-dark);
+  display:grid;place-items:center;
+  font-size:15px;font-weight:800;
+}
+.cat-item .cat-name{
+  font-size:13px;
+  font-weight:600;
+  color:var(--text);
+  line-height:1.35;
+  margin-bottom:2px;
+}
+.cat-item .cat-count{
+  font-size:11px;
+  color:var(--text-3);
+}
+
+/* 深度解析 */
+.article-box{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius-card);
+  padding:30px 34px;
+  box-shadow:var(--shadow-sm);
+  font-size:14.5px;
+  color:var(--text-2);
+  line-height:1.9;
+}
+.article-box h3{
+  font-size:1.05rem;
+  font-weight:800;
+  color:var(--text);
+  margin:26px 0 10px;
+  letter-spacing:-.2px;
+  padding-left:10px;
+  border-left:3px solid var(--primary);
+}
+.article-box h3:first-of-type{margin-top:0;}
+.article-box p+p{margin-top:12px;}
+.article-box b{color:var(--text);font-weight:600;}
+.article-box ul{
+  margin:10px 0 10px 4px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.article-box ul li{
+  padding-left:18px;
+  position:relative;
+}
+.article-box ul li::before{
+  content:"";
+  position:absolute;left:2px;top:10px;
+  width:5px;height:5px;
+  border-radius:50%;
+  background:var(--primary);
+}
+.article-box .compare-table{
+  width:100%;
+  border-collapse:collapse;
+  margin:14px 0;
+  font-size:13px;
+}
+.article-box .compare-table th{
+  background:#faf4f6;
+  text-align:left;
+  padding:8px 10px;
+  font-weight:700;
+  color:var(--text);
+  border-bottom:1px solid var(--line-2);
+  font-size:12.5px;
+}
+.article-box .compare-table td{
+  padding:8px 10px;
+  border-bottom:1px solid var(--line);
+  vertical-align:top;
+}
+.article-box .compare-table tr:last-child td{border-bottom:none;}
+
+/* 体验指南 */
+.guide-steps{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+.guide-step{
+  display:flex;
+  gap:16px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius-card);
+  padding:18px 20px;
+  box-shadow:var(--shadow-sm);
+}
+.guide-step .step-num{
+  width:34px;height:34px;
+  border-radius:50%;
+  background:var(--primary-light);
+  color:var(--primary-dark);
+  display:grid;place-items:center;
+  font-weight:800;
+  font-size:14px;
+  flex-shrink:0;
+  margin-top:2px;
+}
+.guide-step .step-body h4{
+  font-size:14px;
+  font-weight:700;
+  color:var(--text);
+  margin-bottom:4px;
+}
+.guide-step .step-body p{
+  font-size:13px;
+  color:var(--text-2);
+  line-height:1.7;
+}
+
+/* FAQ */
+.faq-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.faq-item{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:var(--shadow-sm);
+}
+.faq-item summary{
+  padding:15px 18px;
+  font-size:14px;
+  font-weight:600;
+  color:var(--text);
+  cursor:pointer;
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  transition:background .16s;
+}
+.faq-item summary:hover{background:#fffafb;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{
+  content:"+";
+  font-size:18px;
+  color:var(--primary);
+  font-weight:400;
+  flex-shrink:0;
+  line-height:1;
+  transition:transform .2s;
+}
+.faq-item[open] summary::after{
+  content:"−";
+  transform:rotate(180deg);
+}
+.faq-item[open] summary{background:#fffafb;border-bottom:1px solid var(--line);}
+.faq-answer{
+  padding:14px 18px 16px;
+  font-size:13.5px;
+  color:var(--text-2);
+  line-height:1.8;
+}
+
+/* 评论 */
+.comment-list{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius-card);
+  overflow:hidden;
+  box-shadow:var(--shadow-sm);
+}
+.comment-item{
+  display:flex;
+  gap:12px;
+  padding:14px 18px;
+  border-bottom:1px solid var(--line);
+}
+.comment-item:last-child{border-bottom:none;}
+.comment-avatar{
+  width:34px;height:34px;
+  border-radius:50%;
+  flex-shrink:0;
+  display:grid;
+  place-items:center;
+  color:#fff;
+  font-weight:700;
+  font-size:13px;
+}
+.comment-body{flex:1;min-width:0;}
+.comment-meta{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:3px;
+  flex-wrap:wrap;
+}
+.comment-meta .nick{
+  font-size:13px;
+  font-weight:600;
+  color:var(--text);
+}
+.comment-meta time{
+  font-size:11px;
+  color:var(--text-3);
+}
+.comment-meta .c-tag{
+  font-size:10px;
+  color:var(--primary-dark);
+  background:var(--primary-light);
+  padding:0 6px;
+  border-radius:3px;
+  line-height:1.6;
+}
+.comment-text{
+  font-size:13.5px;
+  color:var(--text-2);
+  line-height:1.65;
+}
+
+/* 相关资讯 */
+.news-list{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+.news-item{
+  display:flex;
+  gap:16px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius-card);
+  padding:14px 16px;
+  box-shadow:var(--shadow-sm);
+  transition:border-color .2s,box-shadow .2s;
+}
+.news-item:hover{border-color:var(--line-2);box-shadow:var(--shadow-md);}
+.news-thumb{
+  width:96px;
+  flex-shrink:0;
+  border-radius:8px;
+  overflow:hidden;
+  aspect-ratio:3/2;
+}
+.news-thumb img{width:100%;height:100%;object-fit:cover;}
+.news-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px;}
+.news-body h4{
+  font-size:14px;
+  font-weight:700;
+  color:var(--text);
+  line-height:1.4;
+}
+.news-body h4:hover{color:var(--primary-dark);}
+.news-body p{
+  font-size:12.5px;
+  color:var(--text-2);
+  line-height:1.6;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.news-body time{
+  font-size:11px;
+  color:var(--text-3);
+  margin-top:auto;
+}
+
+/* 相关推荐 */
+.reco-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+}
+.reco-tags a{
+  font-size:12.5px;
+  color:var(--text-2);
+  background:var(--panel);
+  border:1px solid var(--line);
+  padding:7px 14px;
+  border-radius:var(--radius-tag);
+  transition:border-color .2s,color .2s,background .2s;
+  font-weight:500;
+}
+.reco-tags a:hover{
+  border-color:var(--primary);
+  color:var(--primary-dark);
+  background:#fff8fa;
+}
+
+/* 补充：可信度分层 */
+.layer-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+.layer-card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius-card);
+  padding:18px;
+  box-shadow:var(--shadow-sm);
+  border-top:3px solid var(--line-2);
+}
+.layer-card.high{border-top-color:#3f9e6c;}
+.layer-card.mid{border-top-color:#e0a93c;}
+.layer-card.low{border-top-color:#d05a6e;}
+.layer-card h4{
+  font-size:13.5px;
+  font-weight:700;
+  color:var(--text);
+  margin-bottom:6px;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.layer-card .layer-badge{
+  font-size:10px;
+  font-weight:700;
+  padding:1px 7px;
+  border-radius:4px;
+  letter-spacing:.3px;
+}
+.layer-card.high .layer-badge{background:#e2f3ea;color:#2c7a52;}
+.layer-card.mid .layer-badge{background:#fdf3da;color:#a8741a;}
+.layer-card.low .layer-badge{background:#fbe5e9;color:#a83248;}
+.layer-card p{
+  font-size:12.5px;
+  color:var(--text-2);
+  line-height:1.65;
+}
+.layer-card ul{
+  margin-top:8px;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+.layer-card ul li{
+  font-size:12px;
+  color:var(--text-3);
+  padding-left:12px;
+  position:relative;
+}
+.layer-card ul li::before{content:"·";position:absolute;left:0;color:var(--primary);font-weight:700;}
+
+/* 投稿互动 */
+.contribute-banner{
+  background:linear-gradient(120deg,#2b141c,#5a1f35 55%,#8e2e4d);
+  border-radius:var(--radius-card);
+  padding:28px 30px;
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:24px;
+  flex-wrap:wrap;
+  box-shadow:var(--shadow-md);
+}
+.contribute-banner h3{
+  font-size:1.1rem;
+  font-weight:800;
+  margin-bottom:5px;
+  letter-spacing:-.2px;
+}
+.contribute-banner p{
+  font-size:13px;
+  color:rgba(255,255,255,.72);
+  max-width:480px;
+  line-height:1.65;
+}
+.contribute-banner .btn-white{
+  background:#fff;
+  color:#a81e42;
+  font-size:13.5px;
+  font-weight:700;
+  padding:10px 22px;
+  border-radius:8px;
+  white-space:nowrap;
+  transition:transform .2s,box-shadow .2s;
+  flex-shrink:0;
+}
+.contribute-banner .btn-white:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.2);}
+
+/* 空搜索结果 */
+.search-empty{
+  display:none;
+  padding:30px 20px;
+  text-align:center;
+  color:var(--text-3);
+  font-size:13.5px;
+  background:var(--panel);
+  border:1px dashed var(--line-2);
+  border-radius:var(--radius-card);
+}
+.search-empty.show{display:block;}
+
+/* 回到顶部 */
+.back-top{
+  position:fixed;
+  right:20px;
+  bottom:28px;
+  width:42px;height:42px;
+  border-radius:50%;
+  background:var(--primary);
+  color:#fff;
+  display:grid;
+  place-items:center;
+  box-shadow:0 4px 16px rgba(214,44,90,.35);
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(10px);
+  transition:opacity .22s,visibility .22s,transform .22s,background .2s;
+  z-index:45;
+}
+.back-top.show{opacity:1;visibility:visible;transform:translateY(0);}
+.back-top:hover{background:var(--primary-dark);}
+.back-top svg{width:18px;height:18px;}
+
+/* ===== 页尾 ===== */
+.site-footer{
+  background:#23161b;
+  color:#cbbec4;
+  margin-top:20px;
+}
+.footer-inner{
+  max-width:1360px;
+  margin:0 auto;
+  padding:44px 20px 30px;
+}
+.footer-top{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr 1fr;
+  gap:32px;
+  padding-bottom:30px;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.footer-brand .f-logo{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  margin-bottom:10px;
+}
+.footer-brand .f-logo svg{width:28px;height:28px;}
+.footer-brand .f-logo span{
+  font-size:16px;
+  font-weight:800;
+  color:#fff;
+  letter-spacing:.3px;
+}
+.footer-brand p{
+  font-size:12.5px;
+  color:#9a8b92;
+  line-height:1.75;
+  max-width:300px;
+}
+.footer-col h5{
+  font-size:12.5px;
+  color:#fff;
+  font-weight:700;
+  margin-bottom:12px;
+  letter-spacing:.5px;
+}
+.footer-col ul{display:flex;flex-direction:column;gap:7px;}
+.footer-col a{
+  font-size:12.5px;
+  color:#9a8b92;
+  transition:color .18s;
+}
+.footer-col a:hover{color:#ffb3c6;}
+.footer-bottom{
+  padding-top:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+  font-size:11.5px;
+  color:#7a6b72;
+}
+.footer-bottom .f-note{
+  max-width:640px;
+  line-height:1.7;
+}
+.footer-bottom .f-note b{color:#a8989f;font-weight:600;}
+
+/* ===== 响应式 ===== */
+@media(max-width:1100px){
+  .layout{grid-template-columns:160px minmax(0,1fr);}
+  .side-col{display:none;}
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .footer-top{grid-template-columns:1.2fr 1fr 1fr;}
+}
+@media(max-width:1024px){
+  .hero-inner{grid-template-columns:1fr;gap:24px;padding:40px 20px 34px;}
+  .hero-visual{min-height:200px;justify-content:flex-start;}
+  .hero-visual svg{max-width:340px;}
+  .float-1{left:auto;right:6%;top:0;}
+  .float-2{right:auto;left:4%;bottom:0;}
+  .float-3{display:none;}
+  .main-nav{display:none;}
+  .hamburger{display:flex;}
+  .search-box{width:170px;}
+  .layout{grid-template-columns:1fr;padding:28px 20px 56px;gap:20px;}
+  .channel-index{display:none;}
+  .cat-grid{grid-template-columns:repeat(3,1fr);}
+  .layer-grid{grid-template-columns:1fr;}
+}
+@media(max-width:740px){
+  .notice-inner{gap:10px;padding:0 14px;}
+  .notice-items{gap:16px;}
+  .header-inner{gap:10px;padding:0 14px;}
+  .logo-text{font-size:15px;}
+  .search-box{display:none;}
+  .btn-ghost{padding:5px 10px;font-size:12px;}
+  .hero-inner{padding:30px 14px 26px;}
+  .hero-stats{gap:18px;margin-top:24px;}
+  .hero-stat strong{font-size:1.25rem;}
+  .layout{padding:22px 14px 48px;}
+  .card-grid{grid-template-columns:1fr;}
+  .cat-grid{grid-template-columns:repeat(2,1fr);}
+  .article-box{padding:22px 18px;font-size:14px;}
+  .guide-step{padding:14px 16px;gap:12px;}
+  .update-list{padding:2px 14px;}
+  .update-item{gap:10px;}
+  .update-item time{width:52px;font-size:11px;}
+  .update-item .up-type{display:none;}
+  .news-item{gap:12px;padding:12px;}
+  .news-thumb{width:76px;}
+  .contribute-banner{padding:22px 18px;}
+  .footer-inner{padding:32px 14px 24px;}
+  .footer-top{grid-template-columns:1fr 1fr;gap:24px;}
+  .footer-brand{grid-column:1/-1;}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:8px;}
+  .back-top{right:14px;bottom:18px;width:38px;height:38px;}
+  .hero-float-card{padding:8px 10px;font-size:11.5px;}
+  .hero-float-card .mini-thumb{width:30px;height:30px;font-size:10px;}
+  .overview-box{padding:18px 16px;font-size:14px;}
+  .section-head h2{font-size:1.08rem;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ===== 吸顶公告条 ===== -->
+<div class="notice-bar" id="noticeBar">
+  <div class="notice-inner">
+    <span class="notice-brand">抖音意外闪现走光合集</span>
+    <div class="notice-items">
+      <span><span class="dot"></span>11月8日 新增 <b>「地铁扶梯裙摆卡包」</b> 片段</span>
+      <span><span class="dot"></span>11月7日 更新 <b>「试衣间帘子未拉严」</b> 合集</span>
+      <span><span class="dot"></span>11月6日 收录 <b>「户外直播反光镜面」</b> 完整版</span>
+      <span><span class="dot"></span>11月5日 追加 <b>「舞台升降台走光」</b> 高清重制</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 页头 ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="/#hero" class="logo" aria-label="返回首页">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="40" height="40" rx="10" fill="#d62c5a"/>
+        <path d="M13 12.5v15l10.5-6.2L13 12.5z" fill="#fff"/>
+        <circle cx="27.2" cy="14.5" r="2.6" fill="#ffd9e2"/>
+        <path d="M24.5 22.5c1.8 1.1 2.9 2.7 2.9 4.5" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">抖音意外闪现走光合集</span>
+    </a>
+    <nav class="main-nav" aria-label="主题导航">
+      <a href="/#overview" class="active">领域概览</a>
+      <a href="/#featured">精选片段</a>
+      <a href="/#latest">最新更新</a>
+      <a href="/#categories">分类入口</a>
+      <a href="/#deep-dive">深度解析</a>
+      <a href="/#guide">观看指南</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#comments">用户评论</a>
+      <a href="/#news">相关资讯</a>
+      <a href="/#contribute">投稿互动</a>
+    </nav>
+    <div class="header-actions">
+      <div class="search-box" role="search">
+        <input type="search" id="searchInput" placeholder="搜索片段或标签…" aria-label="搜索片段或标签">
+        <button type="button" id="searchBtn" aria-label="搜索">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+      </div>
+      <a href="/#contribute" class="btn-ghost">投稿</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="打开菜单" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- 移动端菜单 -->
+<div class="mobile-menu-overlay" id="menuOverlay"></div>
+<nav class="mobile-menu" id="mobileMenu" aria-label="移动端导航">
+  <button class="close-btn" id="menuCloseBtn" aria-label="关闭菜单">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <h4>频道导航</h4>
+  <a href="/#overview">领域概览</a>
+  <a href="/#featured">精选片段</a>
+  <a href="/#latest">最新更新</a>
+  <a href="/#categories">分类入口</a>
+  <a href="/#deep-dive">深度解析</a>
+  <a href="/#guide">观看指南</a>
+  <a href="/#faq">常见问答</a>
+  <a href="/#comments">用户评论</a>
+  <a href="/#news">相关资讯</a>
+  <a href="/#contribute">投稿互动</a>
+</nav>
+
+<!-- ===== 首屏 ===== -->
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="hero-badge"><span class="pulse"></span>2026年11月8日 更新 · 新收录 4 条</span>
+      <h1>抖音意外闪现走光合集</h1>
+      <p class="hero-desc">
+        收录<b>2026年10月以来</b>抖音上的意外走光片段：<b>衣领滑落、裙摆卡包、镜头错位、反光镜面</b>等具体场景，按路人抓拍、主播失误、舞台事故三类归档。每条标注来源账号与发布时间，方便按类型查证。
+      </p>
+      <div class="hero-actions">
+        <a href="/#featured" class="btn-primary">
+          浏览精选片段
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="/#guide" class="btn-text-link">观看与判断指南 →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><strong>47</strong><span>收录片段</span></div>
+        <div class="hero-stat"><strong>8</strong><span>场景分类</span></div>
+        <div class="hero-stat"><strong>11-08</strong><span>最近更新</span></div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 420 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="heroGrad1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#f8b8c8"/>
+            <stop offset="100%" stop-color="#d62c5a"/>
+          </linearGradient>
+          <linearGradient id="heroGrad2" x1="1" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffe0e8"/>
+            <stop offset="100%" stop-color="#f08a9e"/>
+          </linearGradient>
+        </defs>
+        <rect x="40" y="30" width="340" height="220" rx="18" fill="#fff" stroke="#f0dde3" stroke-width="1.5"/>
+        <rect x="60" y="50" width="140" height="90" rx="10" fill="url(#heroGrad1)" opacity=".9"/>
+        <rect x="214" y="50" width="146" height="42" rx="8" fill="#fdf0f3"/>
+        <rect x="214" y="102" width="146" height="38" rx="8" fill="#fdf0f3"/>
+        <rect x="60" y="154" width="300" height="14" rx="7" fill="#f5e6eb"/>
+        <rect x="60" y="180" width="210" height="12" rx="6" fill="#f5e6eb"/>
+        <rect x="60" y="200" width="160" height="12" rx="6" fill="#f5e6eb"/>
+        <circle cx="92" cy="88" r="18" fill="rgba(255,255,255,.3)"/>
+        <path d="M86 88l5 5 9-10" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="220" y="60" width="60" height="9" rx="4.5" fill="#e8607e" opacity=".45"/>
+        <rect x="220" y="75" width="100" height="7" rx="3.5" fill="#f0c2ce" opacity=".7"/>
+        <rect x="220" y="112" width="70" height="9" rx="4.5" fill="#e8607e" opacity=".35"/>
+        <rect x="220" y="126" width="90" height="7" rx="3.5" fill="#f0c2ce" opacity=".6"/>
+        <path d="M330 180c12 0 22 8 22 18" stroke="#d62c5a" stroke-width="2" stroke-linecap="round" opacity=".3"/>
+        <circle cx="352" cy="198" r="3" fill="#d62c5a" opacity=".35"/>
+      </svg>
+      <div class="hero-float-card float-1">
+        <div class="mini-thumb">11.8</div>
+        <div><b>地铁扶梯裙摆卡包</b><small>新增 · 2分14秒</small></div>
+      </div>
+      <div class="hero-float-card float-2">
+        <div class="mini-thumb" style="background:linear-gradient(135deg,#f0c27a,#e8607e);">11.7</div>
+        <div><b>试衣间帘子未拉严</b><small>合集 · 8条</small></div>
+      </div>
+      <div class="hero-float-card float-3">
+        <div class="mini-thumb" style="background:linear-gradient(135deg,#a8c8f0,#6a8ec8);">11.6</div>
+        <div><b>户外直播反光镜面</b><small>完整版 · 4分02秒</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 主布局：三栏 ===== -->
+<div class="layout">
+
+  <!-- 左频道索引 -->
+  <aside class="channel-index" aria-label="频道索引">
+    <h3>频道索引</h3>
+    <ul>
+      <li><a href="/#overview" class="active"><span class="ch-dot"></span>领域概览</a></li>
+      <li><a href="/#featured"><span class="ch-dot"></span>精选片段</a></li>
+      <li><a href="/#latest"><span class="ch-dot"></span>最新更新</a></li>
+      <li><a href="/#categories"><span class="ch-dot"></span>分类入口</a></li>
+      <li><a href="/#deep-dive"><span class="ch-dot"></span>深度解析</a></li>
+      <li><a href="/#guide"><span class="ch-dot"></span>观看指南</a></li>
+      <li><a href="/#faq"><span class="ch-dot"></span>常见问答</a></li>
+      <li><a href="/#comments"><span class="ch-dot"></span>用户评论</a></li>
+      <li><a href="/#news"><span class="ch-dot"></span>相关资讯</a></li>
+      <li><a href="/#reco"><span class="ch-dot"></span>相关推荐</a></li>
+      <li class="ch-divider"></li>
+      <li><a href="/#layers"><span class="ch-dot"></span>可信度分层</a></li>
+      <li><a href="/#contribute"><span class="ch-dot"></span>投稿互动</a></li>
+    </ul>
+  </aside>
+
+  <!-- 主内容 -->
+  <main class="main-col">
+
+    <!-- 1. 领域概览 -->
+    <section class="section" id="overview">
+      <div class="section-head">
+        <h2>意外走光片段的内容版图</h2>
+        <span class="head-note">2026年10月—11月</span>
+      </div>
+      <div class="overview-box">
+        <p>这类片段大致分三个方向。<b>路人抓拍类</b>多发生在商场扶梯、地铁站台、步行街台阶，拍摄者与被拍者没有交集，画面抖动大，走光往往只有一两秒，比如10月19日抖音账号“街角观察站”发布的商场扶梯片段，裙摆被梯级缝隙卡住后向上翻卷，全过程<strong>持续约3秒</strong>。另一类是<b>主播失误类</b>，直播间换装、起身拿东西、弯腰捡设备时衣领或袖口滑落，这类片段通常有高清回放，10月28日主播“小鹿不困”在换装间隙转身时肩带滑落，录屏版本被多个账号转发。第三类是<b>舞台事故类</b>，商演、校园晚会、漫展舞台上的服装脱落或走位失误，例如11月2日某高校迎新晚会舞蹈节目中学员裙撑脱落，现场观众多角度拍摄。</p>
+        <p>场景集中在<b>扶梯、试衣间、舞台、户外直播、地铁闸机、商场镜面区</b>六类。<span class="tag-inline">扶梯</span><span class="tag-inline">试衣间</span><span class="tag-inline">舞台事故</span>是10月以来投稿量最多的三个标签。从片段时长看，多数在15秒到2分钟之间，完整版往往超过3分钟，需要从直播回放或监控翻拍中截取。</p>
+        <p>值得注意的细节差异：<b>路人抓拍</b>的清晰度普遍偏低，多数为手机竖屏、距离较远、手抖，但现场感强；<b>主播失误</b>画质稳定、光线均匀，但往往在关键帧被平台打码或限流；<b>舞台事故</b>有专业机位和观众机位两个来源，观众机位更容易拍到未剪辑画面。判断一条片段值不值得点开，可以先看封面帧是否对准事件发生瞬间、标题是否写清具体地点和场景类型、发布账号是否持续更新同类内容。</p>
+      </div>
+    </section>
+
+    <!-- 2. 精选内容推荐 -->
+    <section class="section" id="featured">
+      <div class="section-head">
+        <h2>本周精选走光片段</h2>
+        <a href="/#latest" class="head-link">查看全部更新 →</a>
+      </div>
+      <div class="card-grid" id="featuredGrid">
+        <article class="content-card" data-keywords="地铁 扶梯 裙摆 卡包 路人抓拍">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/metro-skirt01/400/300" width="400" height="300" loading="lazy" alt="地铁扶梯裙摆卡包片段封面">
+            <span class="card-badge">路人抓拍</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">地铁2号线扶梯裙摆卡进梯级缝隙</h3>
+            <div class="card-tags"><span>扶梯</span><span>裙摆</span><span>现场原声</span></div>
+            <p class="card-desc">拍摄于10月19日早高峰，浅色长裙后摆被梯级接缝夹住，上行过程中裙摆翻起约20厘米，同乘者提醒后脱困。</p>
+            <div class="card-footer"><span>热度 8.7万</span><span class="heat">完整版 2:14</span></div>
+          </div>
+        </article>
+
+        <article class="content-card" data-keywords="试衣间 帘子 走光 商场 监控">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/fitting-room02/400/300" width="400" height="300" loading="lazy" alt="试衣间帘子未拉严合集封面">
+            <span class="card-badge">合集</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">试衣间帘子未拉严 8条同场景片段</h3>
+            <div class="card-tags"><span>试衣间</span><span>帘子缝隙</span><span>商场</span></div>
+            <p class="card-desc">合集收录8条不同商场试衣间帘子闭合不全的片段，其中3条来自顾客自拍视角，2条来自对面镜子反射。</p>
+            <div class="card-footer"><span>热度 6.2万</span><span class="heat">8条合集</span></div>
+          </div>
+        </article>
+
+        <article class="content-card" data-keywords="户外直播 反光镜面 主播 走光">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/outdoor-mirror03/400/300" width="400" height="300" loading="lazy" alt="户外直播反光镜面走光片段封面">
+            <span class="card-badge">主播失误</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">户外直播反光镜面 完整4分02秒</h3>
+            <div class="card-tags"><span>反光镜面</span><span>户外直播</span><span>完整版</span></div>
+            <p class="card-desc">主播在商场外玻璃幕墙前调整手机支架，镜面反射拍到侧后方视角，视频完整版4分02秒，未剪辑。</p>
+            <div class="card-footer"><span>热度 5.8万</span><span class="heat">4:02</span></div>
+          </div>
+        </article>
+
+        <article class="content-card" data-keywords="舞台 升降台 走光 演出事故">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/stage-lift04/400/300" width="400" height="300" loading="lazy" alt="舞台升降台走光片段封面">
+            <span class="card-badge">舞台事故</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">商场中庭舞台升降台裙撑脱落</h3>
+            <div class="card-tags"><span>舞台事故</span><span>升降台</span><span>裙撑</span></div>
+            <p class="card-desc">11月2日某商场中庭品牌活动，舞蹈演员从升降台升起时裙撑卡在台面缝隙，导致外层裙体滑落，观众席多角度拍摄。</p>
+            <div class="card-footer"><span>热度 4.9万</span><span class="heat">3角度</span></div>
+          </div>
+        </article>
+
+        <article class="content-card" data-keywords="衣领 滑落 主播 换装 肩带">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/collar-slip05/400/300" width="400" height="300" loading="lazy" alt="主播换装衣领滑落片段封面">
+            <span class="card-badge">主播失误</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">小鹿不困 换装间隙肩带滑落录屏</h3>
+            <div class="card-tags"><span>衣领滑落</span><span>换装</span><span>录屏</span></div>
+            <p class="card-desc">10月28日晚直播换装环节，主播转身取衣服时左侧肩带滑落，持续约4秒后自行发现并整理，录屏版本被转发较多。</p>
+            <div class="card-footer"><span>热度 7.3万</span><span class="heat">0:04关键帧</span></div>
+          </div>
+        </article>
+
+        <article class="content-card" data-keywords="地铁 闸机 背包 带子 钩挂">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/metro-gate06/400/300" width="400" height="300" loading="lazy" alt="地铁闸机背包带钩挂走光片段封面">
+            <span class="card-badge">路人抓拍</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">地铁闸机背包带钩挂上衣下摆</h3>
+            <div class="card-tags"><span>地铁闸机</span><span>背包带</span><span>钩挂</span></div>
+            <p class="card-desc">11月4日早高峰，乘客背包侧袋挂钩挂住前面女士上衣下摆，过闸瞬间上衣被扯起约15厘米，后方乘客手机拍到。</p>
+            <div class="card-footer"><span>热度 3.6万</span><span class="heat">0:18</span></div>
+          </div>
+        </article>
+
+        <article class="content-card" data-keywords="步行街 台阶 风 裙摆 抓拍">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/street-stair07/400/300" width="400" height="300" loading="lazy" alt="步行街台阶风吹裙摆片段封面">
+            <span class="card-badge">路人抓拍</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">步行街台阶穿堂风掀裙摆 连拍12张</h3>
+            <div class="card-tags"><span>步行街</span><span>穿堂风</span><span>连拍</span></div>
+            <p class="card-desc">10月22日步行街下行台阶，穿堂风将百褶裙掀至腰部，拍摄者连拍12张后做成图集，其中第7张最清晰。</p>
+            <div class="card-footer"><span>热度 4.1万</span><span class="heat">12张图集</span></div>
+          </div>
+        </article>
+
+        <article class="content-card" data-keywords="校园晚会 舞蹈 裙撑 脱落">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/campus-dance08/400/300" width="400" height="300" loading="lazy" alt="校园晚会舞蹈裙撑脱落片段封面">
+            <span class="card-badge">舞台事故</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">高校迎新晚会 舞蹈节目裙撑脱落</h3>
+            <div class="card-tags"><span>校园晚会</span><span>舞蹈</span><span>裙撑</span></div>
+            <p class="card-desc">11月2日某高校迎新晚会，第三支舞蹈节目中学员转身动作导致裙撑卡扣断开，外层纱裙滑落，台下学生手机拍摄。</p>
+            <div class="card-footer"><span>热度 5.5万</span><span class="heat">2机位</span></div>
+          </div>
+        </article>
+
+        <article class="content-card" data-keywords="商场 镜面 地砖 反射 走光">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/mall-floor09/400/300" width="400" height="300" loading="lazy" alt="商场镜面地砖反射走光片段封面">
+            <span class="card-badge">路人抓拍</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">商场镜面地砖反射 仰拍视角合集</h3>
+            <div class="card-tags"><span>商场镜面</span><span>地砖反射</span><span>仰拍</span></div>
+            <p class="card-desc">10月30日某商场中庭，镜面地砖将二楼玻璃护栏处的短裙反射到一楼视角，拍摄者蹲低角度录下约40秒。</p>
+            <div class="card-footer"><span>热度 3.2万</span><span class="heat">0:40</span></div>
+          </div>
+        </article>
+
+        <article class="content-card" data-keywords="直播间 起身 镜头 衣摆 走光">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/live-stand10/400/300" width="400" height="300" loading="lazy" alt="直播间起身镜头未切衣摆走光片段封面">
+            <span class="card-badge">主播失误</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">直播间起身拿水 镜头未切衣摆掀开</h3>
+            <div class="card-tags"><span>直播间</span><span>起身</span><span>镜头未切</span></div>
+            <p class="card-desc">11月5日下午场，主播起身去拿身后矿泉水，宽版上衣下摆被椅背带起，镜头未及时切换，持续约6秒。</p>
+            <div class="card-footer"><span>热度 6.7万</span><span class="heat">0:06</span></div>
+          </div>
+        </article>
+
+        <article class="content-card" data-keywords="漫展 走位 服装 掉落 舞台">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/comic-stage11/400/300" width="400" height="300" loading="lazy" alt="漫展舞台走位服装掉落片段封面">
+            <span class="card-badge">舞台事故</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">漫展舞台 走位时外披固定扣崩开</h3>
+            <div class="card-tags"><span>漫展</span><span>走位</span><span>固定扣</span></div>
+            <p class="card-desc">10月26日某漫展主舞台，COSER在转身走位时外披肩部固定扣崩开，内搭吊带露出，观众席右侧机位拍摄。</p>
+            <div class="card-footer"><span>热度 4.4万</span><span class="heat">0:52</span></div>
+          </div>
+        </article>
+
+        <article class="content-card" data-keywords="雨天 透明 雨伞 反光 裙装">
+          <div class="card-thumb">
+            <img src="https://picsum.photos/seed/rain-umbrella12/400/300" width="400" height="300" loading="lazy" alt="雨天透明雨伞反光裙装片段封面">
+            <span class="card-badge">路人抓拍</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">雨天透明伞面反光 裙装轮廓倒影</h3>
+            <div class="card-tags"><span>雨天</span><span>透明雨伞</span><span>反光</span></div>
+            <p class="card-desc">10月24日下雨天，路口等红灯时透明伞面将身后女士的裙装轮廓反射到拍摄者镜头中，约8秒。</p>
+            <div class="card-footer"><span>热度 2.9万</span><span class="heat">0:08</span></div>
+          </div>
+        </article>
+      </div>
+      <div class="search-empty" id="searchEmpty">没有找到匹配的片段，换个关键词试试（如“扶梯”“试衣间”“舞台”）。</div>
+    </section>
+
+    <!-- 3. 最新更新 -->
+    <section class="section" id="latest">
+      <div class="section-head">
+        <h2>最新更新动态</h2>
+        <span class="head-note">11月6日—11月8日</span>
+      </div>
+      <div class="update-list">
+        <div class="update-item">
+          <time>11-08</time>
+          <div class="up-content">
+            <a href="/#featured">地铁扶梯裙摆卡包 · 新增正面机位</a>
+            <p>同一事件另一角度拍摄，正面机位清晰拍到裙摆卡入缝隙后翻起的过程，时长1分47秒。</p>
+          </div>
+          <span class="up-type">新增</span>
+        </div>
+        <div class="update-item">
+          <time>11-08</time>
+          <div class="up-content">
+            <a href="/#featured">试衣间帘子合集 · 补充第8条</a>
+            <p>新增一条来自杭州某商场试衣间对面镜子反射的片段，帘子缝隙约6厘米，拍摄者从镜子中发现。</p>
+          </div>
+          <span class="up-type">补充</span>
+        </div>
+        <div class="update-item">
+          <time>11-07</time>
+          <div class="up-content">
+            <a href="/#featured">户外直播反光镜面 · 完整版上传</a>
+            <p>此前只流传15秒剪辑，11月6日原发布者放出4分02秒完整版，包含主播调整支架的全过程。</p>
+          </div>
+          <span class="up-type">完整版</span>
+        </div>
+        <div class="update-item">
+          <time>11-07</time>
+          <div class="up-content">
+            <a href="/#featured">舞台升降台走光 · 新增观众席侧机位</a>
+            <p>侧机位拍到裙撑卡入升降台缝隙的瞬间，与正面机位形成时间线对照，可确认卡住位置在台面东侧第三块板。</p>
+          </div>
+          <span class="up-type">新增</span>
+        </div>
+        <div class="update-item">
+          <time>11-06</time>
+          <div class="up-content">
+            <a href="/#featured">小鹿不困肩带滑落 · 录屏版本替换</a>
+            <p>此前流传的录屏被压缩过两次，画质模糊；11月6日换用原始录屏文件，关键帧清晰度提升。</p>
+          </div>
+          <span class="up-type">替换</span>
+        </div>
+        <div class="update-item">
+          <time>11-06</time>
+          <div class="up-content">
+            <a href="/#featured">地铁闸机背包带钩挂 · 新增慢放拆解</a>
+            <p>将0:18原片逐帧慢放，标出挂钩接触上衣下摆的第4秒到第6秒，确认是背包侧袋金属钩所致。</p>
+          </div>
+          <span class="up-type">新增</span>
+        </div>
+        <div class="update-item">
+          <time>11-05</time>
+          <div class="up-content">
+            <a href="/#featured">直播间起身拿水 · 收录下午场完整录屏</a>
+            <p>下午场16:22开始，起身动作发生在16:31，录屏文件时长52分钟，已剪出6秒关键片段。</p>
+          </div>
+          <span class="up-type">收录</span>
+        </div>
+        <div class="update-item">
+          <time>11-05</time>
+          <div class="up-content">
+            <a href="/#featured">漫展舞台固定扣崩开 · 补充右侧机位</a>
+            <p>右侧机位拍到固定扣崩开前3秒的走位路线，可看出转身幅度过大是扣件脱开的直接原因。</p>
+          </div>
+          <span class="up-type">补充</span>
+        </div>
+        <div class="update-item">
+          <time>11-04</time>
+          <div class="up-content">
+            <a href="/#featured">雨天透明伞反光 · 新增两段同类型</a>
+            <p>两段分别拍摄于10月24日和10月26日，均为透明伞面反射，其中一段反射的是裙摆下缘。</p>
+          </div>
+          <span class="up-type">新增</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 分类入口 -->
+    <section class="section" id="categories">
+      <div class="section-head">
+        <h2>按场景分类查找</h2>
+        <span class="head-note">8个场景标签</span>
+      </div>
+      <div class="cat-grid">
+        <a href="/#featured" class="cat-item">
+          <div class="cat-icon">扶</div>
+          <div class="cat-name">扶梯/台阶</div>
+          <div class="cat-count">12条片段</div>
+        </a>
+        <a href="/#featured" class="cat-item">
+          <div class="cat-icon">试</div>
+          <div class="cat-name">试衣间</div>
+          <div class="cat-count">8条合集</div>
+        </a>
+        <a href="/#featured" class="cat-item">
+          <div class="cat-icon">台</div>
+          <div class="cat-name">舞台事故</div>
+          <div class="cat-count">9条片段</div>
+        </a>
+        <a href="/#featured" class="cat-item">
+          <div class="cat-icon">播</div>
+          <div class="cat-name">主播失误</div>
+          <div class="cat-count">11条录屏</div>
+        </a>
+        <a href="/#featured" class="cat-item">
+          <div class="cat-icon">镜</div>
+          <div class="cat-name">镜面反射</div>
+          <div class="cat-count">7条片段</div>
+        </a>
+        <a href="/#featured" class="cat-item">
+          <div class="cat-icon">风</div>
+          <div class="cat-name">风吹裙摆</div>
+          <div class="cat-count">5条片段</div>
+        </a>
+        <a href="/#featured" class="cat-item">
+          <div class="cat-icon">闸</div>
+          <div class="cat-name">地铁闸机</div>
+          <div class="cat-count">6条片段</div>
+        </a>
+        <a href="/#featured" class="cat-item">
+          <div class="cat-icon">伞</div>
+          <div class="cat-name">雨天反光</div>
+          <div class="cat-count">4条片段</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- 5. 深度解析 -->
+    <section class="section" id="deep-dive">
+      <div class="section-head">
+        <h2>走光片段可信度拆解与判断方法</h2>
+        <span class="head-note">可核对的结构</span>
+      </div>
+      <div class="article-box">
+        <h3>一、同一事件多机位，先对齐时间线</h3>
+        <p>以11月2日商场中庭舞台升降台事件为例，目前可看到三个机位：正面观众席、右侧通道、舞台侧幕。三个机位的开始录制时间不同，正面机位从节目开场就在录，右侧通道机位在裙撑卡住前约12秒才开始，侧幕机位只有后半段。要对齐时间线，先用主持人报幕的声音作为基准点——三个机位都录到了同一句“接下来请欣赏第三支舞蹈”，以此为零点，裙撑脱落发生在零点后第1分48秒。正面机位完整记录脱落过程；右侧机位拍到了裙撑卡入缝隙的接触点；侧幕机位只拍到演员退场后的处理。</p>
+        <p>能对齐时间线的多机位素材，可信度明显高于单机位。单机位片段如果缺少前后文，无法判断是意外还是摆拍。10月28日主播肩带滑落事件之所以传播广，是因为录屏包含换装前的完整对话和换装后的整理动作，前后文完整。对比之下，10月30日商场镜面地砖反射那段只有40秒，没有拍到被拍摄者的正面，也没有声音，判断空间就小很多。</p>
+
+        <h3>二、画质与压缩痕迹是硬指标</h3>
+        <p>抖音上的片段经过上传压缩，二次转发会再压缩一次。判断一条片段是原片还是多次转发，可以看两个地方：字幕边缘是否出现锯齿、暗部是否出现成块色斑。11月6日替换的小鹿不困录屏，原文件关键帧在衣领处能看到布料的经纬纹理，而此前流传的版本同一位置已经糊成一片。另一个指标是音频——多次压缩的片段，环境音会有明显的“水声”感，原片的环境音更干脆。</p>
+        <p>以下三类来源的可信度分级，按可核对信息量从高到低排列：</p>
+        <table class="compare-table">
+          <thead>
+            <tr><th>来源类型</th><th>可核对项</th><th>常见缺失</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>直播录屏（原始文件）</td><td>时间码、主播ID、前后对话</td><td>无</td></tr>
+            <tr><td>现场多机位拍摄</td><td>多角度时间线、环境声</td><td>拍摄者身份未知</td></tr>
+            <tr><td>单机位转发</td><td>画面本身</td><td>前后文、原始时间、拍摄者</td></tr>
+          </tbody>
+        </table>
+
+        <h3>三、标题里的地点和时间经不经得起核对</h3>
+        <p>不少片段标题写“地铁扶梯”，但画面里没有站名、没有线路标识、没有时间水印。这类片段无法核实具体地点，只能按“扶梯场景”归类，不能当作某地某站的具体事件引用。10月19日那条地铁扶梯裙摆卡包片段之所以能定位到“地铁2号线”，是因为画面右上角拍到了站台立柱上的线路色带和站名拼音，且发布者配文写明“早高峰8点前后”。这些是可核对痕迹。</p>
+        <p>相反，11月4日闸机背包带钩挂片段，画面里只拍到闸机机身和地面导向箭头，没有站名，标题里写的“某地铁站”属于模糊处理。这类片段作为类型参考没问题，但要引用具体地点就缺依据。判断顺序：先找站名或线路标识，再找时间水印或环境光线（早高峰的冷白灯光 vs 晚间暖黄灯），最后看发布者是否在同一账号持续更新同一地点内容。</p>
+
+        <h3>四、热度高不等于画面完整</h3>
+        <p>热度数字受发布时间和推荐机制影响，不能直接换算成画面质量。11月5日直播间起身拿水片段热度6.7万，但关键画面只有6秒，前后各留了约20秒无关内容。10月24日雨天透明伞反光片段热度只有2.9万，但8秒画面里反射的裙装轮廓清晰可辨，且拍摄者在评论区补充了拍摄地点和天气。对想看清具体细节的人来说，后者的有效信息密度更高。</p>
+        <p>可操作的判断顺序：第一步看封面帧是否对准事件发生瞬间，第二步看片长是否超过1分钟且前后文完整，第三步看发布者有没有在评论区补充地点、时间、设备。三项都满足的片段，才值得花时间逐帧看。只有封面吸引人、点进去发现关键帧被剪掉的，直接跳过。</p>
+      </div>
+    </section>
+
+    <!-- 6. 体验指南 -->
+    <section class="section" id="guide">
+      <div class="section-head">
+        <h2>观看顺序与内容筛选指南</h2>
+        <span class="head-note">按类型而非按热度</span>
+      </div>
+      <div class="guide-steps">
+        <div class="guide-step">
+          <div class="step-num">1</div>
+          <div class="step-body">
+            <h4>先看舞台事故类，画面最完整</h4>
+            <p>舞台事故有专业机位和观众机位，多数片段超过1分钟，能看清事件前后。11月2日升降台事件三个机位加起来超过6分钟，适合先建立对“意外走光”的画面认知，再去看更短的片段。</p>
+          </div>
+        </div>
+        <div class="guide-step">
+          <div class="step-num">2</div>
+          <div class="step-body">
+            <h4>再看主播失误类，重点看前后文</h4>
+            <p>直播间录屏通常有完整时间线，关键帧前后各有几分钟对话和动作。判断一条主播失误片段是否完整，看它有没有包含失误发生前的准备动作和发生后的处理动作，两者都在才值得看。</p>
+          </div>
+        </div>
+        <div class="guide-step">
+          <div class="step-num">3</div>
+          <div class="step-body">
+            <h4>路人抓拍类最后看，先核对地点标识</h4>
+            <p>路人抓拍画质参差，优先选画面里出现站名、商场导视牌、路牌等可定位标识的片段。10月19日扶梯片段有线路色带，10月22日步行街片段有店铺招牌，这类片段的信息量高于只有人像的片段。</p>
+          </div>
+        </div>
+        <div class="guide-step">
+          <div class="step-num">4</div>
+          <div class="step-body">
+            <h4>同类片段横向比较，看三个指标</h4>
+            <p>同一场景的多条片段放在一起，比较：关键帧清晰度、前后文完整度、发布者是否补充说明。三项里占两项的，保留；只占一项的，当作类型参考，不当作具体事件引用。试衣间合集8条里，有3条同时满足清晰度和前后文，优先看这3条。</p>
+          </div>
+        </div>
+        <div class="guide-step">
+          <div class="step-num">5</div>
+          <div class="step-body">
+            <h4>被限流或打码的片段，找原始发布账号</h4>
+            <p>平台会对部分关键帧打码，转发版本画质更差。遇到打码片段，先看评论区有没有人提到原始账号名，再去搜该账号的原始发布记录。11月6日替换的肩带滑落录屏就是通过评论区线索找到原始文件的。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section class="section" id="faq">
+      <div class="section-head">
+        <h2>常见问答</h2>
+        <span class="head-note">6个高频问题</span>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>扶梯走光片段一般多长？关键帧出现在第几秒？</summary>
+          <div class="faq-answer">多数扶梯片段在15秒到1分30秒之间，关键帧集中在第8秒到第20秒。10月19日地铁2号线那条全长2分14秒，裙摆卡入缝隙发生在第47秒，翻起动作持续到第50秒。短于15秒的片段通常只截了关键帧前后各几秒，看不到脱困过程。</div>
+        </details>
+        <details class="faq-item">
+          <summary>试衣间帘子合集里哪几条有对面镜子反射？</summary>
+          <div class="faq-answer">8条合集里有2条是镜子反射角度，分别是第3条和第7条。第3条反射的是帘子左侧缝隙，第7条反射的是右侧帘轨脱开后的整片帘布。两条的镜子位置都在试衣间正对面约2米处，拍摄者站在镜子侧后方。</div>
+        </details>
+        <details class="faq-item">
+          <summary>直播间起身拿水片段为什么只有6秒？原片多长？</summary>
+          <div class="faq-answer">原直播录屏52分钟，从16:22开播到17:14下播。起身动作发生在16:31，从起身到坐下约6秒。剪辑版只保留了这6秒，完整版在11月5日更新里收录，包含起身前的对话和坐下后的继续讲解。</div>
+        </details>
+        <details class="faq-item">
+          <summary>舞台升降台事故的裙撑是卡在哪个位置？</summary>
+          <div class="faq-answer">卡在升降台台面东侧第三块板的接缝处。右侧通道机位拍到裙撑下缘的钢丝圈勾进缝隙约3厘米，正面机位拍到裙撑被台面上升顶起后外层纱裙滑落。两个机位的时间差约2秒，右侧机位更早拍到卡入瞬间。</div>
+        </details>
+        <details class="faq-item">
+          <summary>漫展舞台固定扣崩开和校园晚会裙撑脱落是同一类事故吗？</summary>
+          <div class="faq-answer">机制不同。漫展那起是肩部固定扣崩开，属于扣件强度问题，走位幅度大是直接诱因。校园晚会那起是裙撑卡扣断开，属于结构件失效。两起都发生在转身动作中，但前者是外披脱落，后者是裙撑失去支撑导致外层裙体整体下滑。</div>
+        </details>
+        <details class="faq-item">
+          <summary>雨天透明伞反光片段里，反射的是伞面还是地面积水？</summary>
+          <div class="faq-answer">反射面是透明伞面内侧。10月24日那条，拍摄者站在被拍者前方约1.5米，伞面倾斜角度约45度，裙装轮廓出现在伞面中下部。10月26日那条反射面是地面积水，拍摄者蹲低到膝盖高度，反射的是裙摆下缘。两条的反射面不同。</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 8. 用户评论 -->
+    <section class="section" id="comments">
+      <div class="section-head">
+        <h2>用户评论</h2>
+        <span class="head-note">16条 · 按时间倒序</span>
+      </div>
+      <div class="comment-list">
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#d62c5a;">林</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">林间有风</span><time>11-08 09:12</time><span class="c-tag">扶梯</span></div>
+            <p class="comment-text">地铁2号线扶梯那条正面机位比之前的侧后方清楚太多了，裙摆卡进去的缝能看清是梯级踏面跟围裙板之间那个位置。之前一直以为是夹在扶手带下面。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#8e2e4d;">陈</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">陈小满</span><time>11-08 08:47</time><span class="c-tag">试衣间</span></div>
+            <p class="comment-text">试衣间合集第7条镜子反射是真的明显，帘轨脱开后整片帘布往一边倒，镜子正对着拍得清清楚楚。不过那条帘子本来就是坏的，商场该修了。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#e8607e;">阿</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">阿茶不加冰</span><time>11-07 23:15</time><span class="c-tag">直播</span></div>
+            <p class="comment-text">小鹿那个录屏我之前存的糊得不行，这回替换的版本终于能看清肩带是滑到手臂中段，不是直接掉下来。4秒左右，她自己是低头看到才反应过来的。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#a81e42;">老</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">老猫不抓鱼</span><time>11-07 21:03</time><span class="c-tag">舞台</span></div>
+            <p class="comment-text">升降台那三个机位对齐时间线的方法靠谱，我按报幕那句“第三支舞蹈”对了一下，正面机位确实是零点后1分48秒脱落的。侧幕机位开始录的时候已经晚了。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#f08a9e;">小</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">小圆不圆</span><time>11-07 19:44</time><span class="c-tag">闸机</span></div>
+            <p class="comment-text">闸机背包带那条慢放看清楚了，金属钩是侧袋那个小挂钩，过闸的时候挂住前面人下摆，一拽就带起来了。以后过闸得把背包转前面。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#6a8ec8;">张</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">张鱼小丸子</span><time>11-06 22:30</time><span class="c-tag">漫展</span></div>
+            <p class="comment-text">漫展那个固定扣崩开，主要问题是那个扣子本来就只缝了两针，走位幅度一大直接崩。COSER自己下场后在后台用别针别回去了，后半场继续上台，也难为她了。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#d05a6e;">周</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">周周不吃香菜</span><time>11-06 18:20</time><span class="c-tag">镜面</span></div>
+            <p class="comment-text">商场镜面地砖那条仰拍其实拍得一般，反射出来的画面很小，要放大才看得到。热度虚高了吧。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#3f9e6c;">吴</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">吴所事事</span><time>11-06 14:05</time><span class="c-tag">雨天</span></div>
+            <p class="comment-text">透明伞反射那两条，10月24日那条反射角度好，裙摆轮廓清楚；10月26日地面积水那条基本看不清，蹲太低反而糊了。同类型不同质量差别挺大。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#e0a93c;">郑</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">郑在发呆</span><time>11-05 23:51</time><span class="c-tag">直播</span></div>
+            <p class="comment-text">下午场直播那个起身拿水，椅子是那种折叠椅，靠背带子勾住下摆，一起身就带起来了。镜头没切应该是导播没反应过来。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#b85c7a;">孙</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">孙悟饭不吃桃</span><time>11-05 16:18</time><span class="c-tag">校园</span></div>
+            <p class="comment-text">迎新晚会那个裙撑脱落是在第三支舞的第二个八拍，我在现场。纱裙掉下来之后前排有男生起哄，主持人上来圆场说“道具组准备不充分”，挺尴尬的。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#c46a3a;">黄</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">黄豆豆本豆</span><time>11-04 20:29</time><span class="c-tag">步行街</span></div>
+            <p class="comment-text">步行街穿堂风那个连拍12张，第7张确实最清楚，裙摆掀到腰那里，后面几张就落下去了。秋天风大的时候这种台阶口确实容易出状况。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#7a8ec8;">何</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">何必问</span><time>11-04 11:02</time><span class="c-tag">扶梯</span></div>
+            <p class="comment-text">这类合集整理起来挺麻烦的，同一件事好几个机位，还得对时间线。之前自己找过升降台那个，三个角度拼了半天才理清先后。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#5a8e6c;">李</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">李慢慢</span><time>11-03 22:44</time><span class="c-tag">试衣间</span></div>
+            <p class="comment-text">试衣间那条第3条，镜子反射看到帘子缝隙大概6厘米，拍的人是从镜子里发现的，这个视角之前没想到过。不过还是少看这种，被拍的人挺无辜的。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#a85c8e;">赵</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">赵可乐</span><time>11-02 19:07</time><span class="c-tag">舞台</span></div>
+            <p class="comment-text">商场中庭那个活动我也在现场，第二排。裙撑卡住的时候演员自己愣了一秒，然后马上用手去提，但外层纱裙已经滑到膝盖了。台下有人喊“别拍了”，但掏手机的人不少。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#8e6ac8;">王</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">王大可</span><time>11-01 15:33</time><span class="c-tag">漫展</span></div>
+            <p class="comment-text">漫展舞台那个外披固定扣，看慢放是转身第3步的时候崩的，扣子飞出去大概半米。后面有个观众捡到了，还发了图。</p>
+          </div>
+        </div>
+        <div class="comment-item">
+          <div class="comment-avatar" style="background:#d88a5c;">刘</div>
+          <div class="comment-body">
+            <div class="comment-meta"><span class="nick">刘浪汉</span><time>10-31 09:48</time><span class="c-tag">杂谈</span></div>
+            <p class="comment-text">说实话看多了都差不多，扶梯、试衣间、舞台，套路就那几种。但偶尔能看到之前没注意过的角度，比如镜面地砖反射那种。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. 相关资讯 -->
+    <section class="section" id="news">
+      <div class="section-head">
+        <h2>相关资讯</h2>
+        <span class="head-note">10月15日—11月8日</span>
+      </div>
+      <div class="news-list">
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/news-metro01/600/400" width="600" height="400" loading="lazy" alt="地铁扶梯安全提示新闻配图"></div>
+          <div class="news-body">
+            <h4>地铁2号线加装扶梯围裙板防夹条 11月7日起试点</h4>
+            <p>运营方在2号线三个换乘站加装防夹条，针对裙摆、鞋带、背包带卡入梯级缝隙的情况。首批试点站为中山公园站、静安寺站、人民广场站，11月7日完成安装。</p>
+            <time>11-07</time>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/news-fitting02/600/400" width="600" height="400" loading="lazy" alt="商场试衣间帘轨检修新闻配图"></div>
+          <div class="news-body">
+            <h4>杭州某商场试衣间帘轨全面检修 更换38套轨道</h4>
+            <p>该商场11月5日完成试衣间帘轨排查，更换38套滑轨和帘布，涉及三楼女装区全部试衣间。此前有顾客反映帘子闭合后仍留有缝隙，物业称旧轨道使用超过两年。</p>
+            <time>11-05</time>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/news-stage03/600/400" width="600" height="400" loading="lazy" alt="舞台机械安全检查新闻配图"></div>
+          <div class="news-body">
+            <h4>商场中庭活动舞台机械11月起增加开演前检查项</h4>
+            <p>针对升降台接缝卡阻问题，活动执行方在11月4日发布新的检查清单，要求开演前对升降台台面接缝、裙撑固定扣、外披搭扣逐项确认。清单共14项，比此前多出3项。</p>
+            <time>11-04</time>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/news-live04/600/400" width="600" height="400" loading="lazy" alt="直播平台换装环节规范新闻配图"></div>
+          <div class="news-body">
+            <h4>直播平台更新换装环节规范：建议提前切换备用镜头</h4>
+            <p>规则在11月3日更新，要求主播在换装、起身、弯腰等动作前切换至备用镜头或遮挡画面，未切换导致的意外画面平台将做限流处理。此前该规范仅在部分类目试行。</p>
+            <time>11-03</time>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/news-comic05/600/400" width="600" height="400" loading="lazy" alt="漫展舞台安全通告新闻配图"></div>
+          <div class="news-body">
+            <h4>漫展冬季场发布舞台服装安全通告 扣件强度列入检查</h4>
+            <p>通告10月29日发布，要求COSER上台前自查肩部固定扣、腰封搭扣、外披磁吸扣的强度，主办方在后台增设缝纫台和备用别针。冬季场12月6日开展，预计参展社团超过200个。</p>
+            <time>10-29</time>
+          </div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/news-campus06/600/400" width="600" height="400" loading="lazy" alt="高校晚会服装检查新闻配图"></div>
+          <div class="news-body">
+            <h4>多家高校迎新晚会彩排增加服装联排检查环节</h4>
+            <p>10月下旬起，至少5所高校在迎新晚会彩排中增加服装联排，要求所有演出服装在正式上台前完成两次全套动作试穿。某高校艺术团指导老师称，此前裙撑脱落事件后，彩排检查从1次增加到3次。</p>
+            <time>10-28</time>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10. 相关推荐 -->
+    <section class="section" id="reco">
+      <div class="section-head">
+        <h2>相关推荐</h2>
+        <span class="head-note">按具体方向索引</span>
+      </div>
+      <div class="reco-tags">
+        <a href="/#featured">扶梯裙摆卡包</a>
+        <a href="/#featured">试衣间帘轨脱开</a>
+        <a href="/#featured">直播间肩带滑落</a>
+        <a href="/#featured">舞台升降台接缝</a>
+        <a href="/#featured">地铁闸机背包钩挂</a>
+        <a href="/#featured">商场镜面地砖反射</a>
+        <a href="/#featured">漫展固定扣崩开</a>
+        <a href="/#featured">透明伞面反光</a>
+      </div>
+    </section>
+
+    <!-- 11. 补充：可信度分层 -->
+    <section class="section" id="layers">
+      <div class="section-head">
+        <h2>片段可信度分层</h2>
+        <span class="head-note">按可核对信息量</span>
+      </div>
+      <div class="layer-grid">
+        <div class="layer-card high">
+          <h4>可核对层 <span class="layer-badge">高</span></h4>
+          <p>有原始文件、时间码、前后文完整，能定位到具体账号和发布时间。</p>
+          <ul>
+            <li>小鹿不困 11-06 替换录屏</li>
+            <li>升降台事件 三机位时间线</li>
+            <li>地铁2号线 站名色带可辨</li>
+          </ul>
+        </div>
+        <div class="layer-card mid">
+          <h4>部分可核对 <span class="layer-badge">中</span></h4>
+          <p>有现场环境声、多角度画面，但缺少原始时间或拍摄者身份。</p>
+          <ul>
+            <li>闸机背包带钩挂 0:18</li>
+            <li>商场中庭舞台 观众席机位</li>
+            <li>漫展舞台 右侧通道机位</li>
+          </ul>
+        </div>
+        <div class="layer-card low">
+          <h4>待核实 <span class="layer-badge">低</span></h4>
+          <p>单机位、无地点标识、无时间水印，只能作为类型参考。</p>
+          <ul>
+            <li>商场镜面地砖 0:40</li>
+            <li>雨天积水反射 0:08</li>
+            <li>无站名的闸机片段</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. 投稿互动 -->
+    <section class="section" id="contribute">
+      <div class="contribute-banner">
+        <div>
+          <h3>有新的片段线索？</h3>
+          <p>拍到或看到2026年10月以来的意外走光片段，可以提交原始链接和拍摄时间。需要注明场景类型（扶梯/试衣间/舞台/直播/其他）和可核对的地点标识，方便归档时分层。</p>
+        </div>
+        <a href="/#contribute" class="btn-white">提交线索 →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右辅助栏 -->
+  <aside class="side-col" aria-label="辅助信息">
+    <div class="side-card">
+      <h3>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3l2.5 6.5H21l-5.5 4 2 6.5L12 16l-5.5 4 2-6.5L3 9.5h6.5z"/></svg>
+        本周热度榜
+      </h3>
+      <ul class="rank-list">
+        <li>
+          <span class="rank-num">1</span>
+          <div>
+            <a href="/#featured" class="rank-title">地铁2号线扶梯裙摆卡包</a>
+            <div class="rank-meta">8.7万热度 · 11-08更新</div>
+          </div>
+        </li>
+        <li>
+          <span class="rank-num">2</span>
+          <div>
+            <a href="/#featured" class="rank-title">小鹿不困 换装肩带滑落</a>
+            <div class="rank-meta">7.3万热度 · 11-06替换</div>
+          </div>
+        </li>
+        <li>
+          <span class="rank-num">3</span>
+          <div>
+            <a href="/#featured" class="rank-title">直播间起身拿水 衣摆掀开</a>
+            <div class="rank-meta">6.7万热度 · 11-05收录</div>
+          </div>
+        </li>
+        <li>
+          <span class="rank-num">4</span>
+          <div>
+            <a href="/#featured" class="rank-title">试衣间帘子未拉严 8条合集</a>
+            <div class="rank-meta">6.2万热度 · 11-08补充</div>
+          </div>
+        </li>
+        <li>
+          <span class="rank-num">5</span>
+          <div>
+            <a href="/#featured" class="rank-title">户外直播反光镜面 完整版</a>
+            <div class="rank-meta">5.8万热度 · 11-07上传</div>
+          </div>
+        </li>
+        <li>
+          <span class="rank-num">6</span>
+          <div>
+            <a href="/#featured" class="rank-title">高校迎新晚会 裙撑脱落</a>
+            <div class="rank-meta">5.5万热度 · 11-02现场</div>
+          </div>
+        </li>
+      </ul>
+      <a href="/#featured" class="side-more">查看完整热度榜 →</a>
+    </div>
+
+    <div class="side-card">
+      <h3>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+        最近更新
+      </h3>
+      <ul class="update-stream">
+        <li>
+          <time>11-08 09:40</time>
+          <a href="/#featured" class="up-title">地铁扶梯正面机位新增</a>
+        </li>
+        <li>
+          <time>11-08 08:15</time>
+          <a href="/#featured" class="up-title">试衣间合集补第8条</a>
+        </li>
+        <li>
+          <time>11-07 21:30</time>
+          <a href="/#featured" class="up-title">户外直播完整版上传</a>
+        </li>
+        <li>
+          <time>11-07 16:08</time>
+          <a href="/#featured" class="up-title">升降台侧机位新增</a>
+        </li>
+        <li>
+          <time>11-06 19:20</time>
+          <a href="/#featured" class="up-title">肩带滑落录屏替换</a>
+        </li>
+        <li>
+          <time>11-06 11:05</time>
+          <a href="/#featured" class="up-title">闸机片段慢放拆解</a>
+        </li>
+      </ul>
+      <a href="/#latest" class="side-more">全部更新 →</a>
+    </div>
+  </aside>
+
+</div>
+
+<!-- 回到顶部 -->
+<button class="back-top" id="backTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- ===== 页尾 ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="f-logo">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="40" height="40" rx="10" fill="#d62c5a"/>
+            <path d="M13 12.5v15l10.5-6.2L13 12.5z" fill="#fff"/>
+            <circle cx="27.2" cy="14.5" r="2.6" fill="#ffd9e2"/>
+          </svg>
+          <span>抖音意外闪现走光合集</span>
+        </div>
+        <p>收录时段覆盖2026年10月8日至11月8日，共47条片段、8个场景分类，按周一至周日滚动更新。条目类型包括路人抓拍、主播录屏、舞台事故、镜面反射四类，每条标注可核对的地点标识与发布时间。</p>
+      </div>
+      <div class="footer-col">
+        <h5>内容分类</h5>
+        <ul>
+          <li><a href="/#featured">扶梯/台阶</a></li>
+          <li><a href="/#featured">试衣间</a></li>
+          <li><a href="/#featured">舞台事故</a></li>
+          <li><a href="/#featured">主播失误</a></li>
+          <li><a href="/#featured">镜面反射</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>信息层级</h5>
+        <ul>
+          <li><a href="/#deep-dive">可信度拆解</a></li>
+          <li><a href="/#layers">片段分层</a></li>
+          <li><a href="/#guide">观看指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>互动</h5>
+        <ul>
+          <li><a href="/#contribute">提交线索</a></li>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#reco">相关推荐</a></li>
+          <li><a href="/#latest">更新动态</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="f-note"><b>内容说明：</b>本页为内容聚合示例，所有片段名称、账号昵称、热度数据均为模拟生成，用于展示分类与信息层级，不指向真实事件或真实账号。最近核对时间：2026年11月8日。</p>
+      <p>© 2026 抖音意外闪现走光合集 · 示例页面</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ===== 搜索筛选 ===== */
+  var searchInput = document.getElementById('searchInput');
+  var searchBtn = document.getElementById('searchBtn');
+  var featuredGrid = document.getElementById('featuredGrid');
+  var searchEmpty = document.getElementById('searchEmpty');
+  var cards = featuredGrid ? Array.prototype.slice.call(featuredGrid.querySelectorAll('.content-card')) : [];
+
+  function doSearch(){
+    var kw = searchInput.value.trim().toLowerCase();
+    if(!kw){
+      cards.forEach(function(c){ c.style.display = ''; });
+      searchEmpty.classList.remove('show');
+      return;
+    }
+    var visible = 0;
+    cards.forEach(function(c){
+      var text = (c.getAttribute('data-keywords') || '') + ' ' + c.textContent.toLowerCase();
+      if(text.indexOf(kw) > -1){
+        c.style.display = '';
+        visible++;
+      } else {
+        c.style.display = 'none';
+      }
+    });
+    if(visible === 0){
+      searchEmpty.classList.add('show');
+    } else {
+      searchEmpty.classList.remove('show');
+    }
+  }
+
+  if(searchBtn && searchInput){
+    searchBtn.addEventListener('click', doSearch);
+    searchInput.addEventListener('keyup', function(e){
+      if(e.key === 'Enter'){ doSearch(); }
+      if(searchInput.value === ''){ doSearch(); }
+    });
+  }
+
+  /* ===== 移动端菜单 ===== */
+  var hamburger = document.getElementById('hamburgerBtn');
+  var mobileMenu = document.getElementById('mobileMenu');
+  var overlay = document.getElementById('menuOverlay');
+  var closeBtn = document.getElementById('menuCloseBtn');
+  var menuLinks = mobileMenu ? mobileMenu.querySelectorAll('a') : [];
+
+  function openMenu(){
+    mobileMenu.classList.add('show');
+    overlay.classList.add('show');
+    hamburger.setAttribute('aria-expanded','true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu(){
+    mobileMenu.classList.remove('show');
+    overlay.classList.remove('show');
+    hamburger.setAttribute('aria-expanded','false');
+    document.body.style.overflow = '';
+  }
+
+  if(hamburger){
+    hamburger.addEventListener('click', function(){
+      if(mobileMenu.classList.contains('show')){ closeMenu(); } else { openMenu(); }
+    });
+  }
+  if(closeBtn){ closeBtn.addEventListener('click', closeMenu); }
+  if(overlay){ overlay.addEventListener('click', closeMenu); }
+  if(menuLinks.length){
+    menuLinks.forEach(function(a){
+      a.addEventListener('click', closeMenu);
+    });
+  }
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && mobileMenu && mobileMenu.classList.contains('show')){
+      closeMenu();
+    }
+  });
+
+  /* ===== 回到顶部 ===== */
+  var backTop = document.getElementById('backTop');
+  function toggleBackTop(){
+    if(window.scrollY > window.innerHeight * 0.8){
+      backTop.classList.add('show');
+    } else {
+      backTop.classList.remove('show');
+    }
+  }
+  window.addEventListener('scroll', toggleBackTop, {passive:true});
+  toggleBackTop();
+
+  if(backTop){
+    backTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* ===== 左侧频道高亮（滚动时） ===== */
+  var channelLinks = document.querySelectorAll('.channel-index a');
+  var sections = [];
+  channelLinks.forEach(function(link){
+    var href = link.getAttribute('href');
+    if(href && href.indexOf('/#') === 0){
+      var id = href.substring(2);
+      var sec = document.getElementById(id);
+      if(sec && sections.indexOf(sec) === -1){
+        sections.push(sec);
+      }
+    }
+  });
+
+  function updateChannelActive(){
+    if(!sections.length) return;
+    var scrollPos = window.scrollY + 140;
+    var current = sections[0];
+    sections.forEach(function(sec){
+      if(sec.offsetTop <= scrollPos){
+        current = sec;
+      }
+    });
+    channelLinks.forEach(function(link){
+      link.classList.remove('active');
+      if(link.getAttribute('href') === '/#' + current.id){
+        link.classList.add('active');
+      }
+    });
+  }
+  window.addEventListener('scroll', updateChannelActive, {passive:true});
+  updateChannelActive();
+
+  /* ===== 页头导航高亮 ===== */
+  var navLinks = document.querySelectorAll('.main-nav a');
+  function updateNavActive(){
+    if(!sections.length) return;
+    var scrollPos = window.scrollY + 140;
+    var current = sections[0];
+    sections.forEach(function(sec){
+      if(sec.offsetTop <= scrollPos){
+        current = sec;
+      }
+    });
+    navLinks.forEach(function(link){
+      link.classList.remove('active');
+      if(link.getAttribute('href') === '/#' + current.id){
+        link.classList.add('active');
+      }
+    });
+  }
+  window.addEventListener('scroll', updateNavActive, {passive:true});
+  updateNavActive();
+
+})();
+</script>
+
+<!-- WebSite 结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "抖音意外闪现走光合集",
+  "description": "收录2026年10月以来的意外走光片段，按扶梯、试衣间、舞台、直播等场景分类，标注来源与发布时间。",
+  "inLanguage": "zh-CN",
+  "dateModified": "2026-11-08"
+}
+</script>
+
+<!-- FAQPage 结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "扶梯走光片段一般多长？关键帧出现在第几秒？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "多数扶梯片段在15秒到1分30秒之间，关键帧集中在第8秒到第20秒。10月19日地铁2号线那条全长2分14秒，裙摆卡入缝隙发生在第47秒，翻起动作持续到第50秒。短于15秒的片段通常只截了关键帧前后各几秒，看不到脱困过程。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "试衣间帘子合集里哪几条有对面镜子反射？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "8条合集里有2条是镜子反射角度，分别是第3条和第7条。第3条反射的是帘子左侧缝隙，第7条反射的是右侧帘轨脱开后的整片帘布。两条的镜子位置都在试衣间正对面约2米处，拍摄者站在镜子侧后方。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "直播间起身拿水片段为什么只有6秒？原片多长？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "原直播录屏52分钟，从16:22开播到17:14下播。起身动作发生在16:31，从起身到坐下约6秒。剪辑版只保留了这6秒，完整版在11月5日更新里收录，包含起身前的对话和坐下后的继续讲解。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "舞台升降台事故的裙撑是卡在哪个位置？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "卡在升降台台面东侧第三块板的接缝处。右侧通道机位拍到裙撑下缘的钢丝圈勾进缝隙约3厘米，正面机位拍到裙撑被台面上升顶起后外层纱裙滑落。两个机位的时间差约2秒，右侧机位更早拍到卡入瞬间。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "漫展舞台固定扣崩开和校园晚会裙撑脱落是同一类事故吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "机制不同。漫展那起是肩部固定扣崩开，属于扣件强度问题，走位幅度大是直接诱因。校园晚会那起是裙撑卡扣断开，属于结构件失效。两起都发生在转身动作中，但前者是外披脱落，后者是裙撑失去支撑导致外层裙体整体下滑。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "雨天透明伞反光片段里，反射的是伞面还是地面积水？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "反射面是透明伞面内侧。10月24日那条，拍摄者站在被拍者前方约1.5米，伞面倾斜角度约45度，裙装轮廓出现在伞面中下部。10月26日那条反射面是地面积水，拍摄者蹲低到膝盖高度，反射的是裙摆下缘。两条的反射面不同。"
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+                            </html>
